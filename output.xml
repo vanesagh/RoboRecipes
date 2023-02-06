@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.16 on linux)" generated="20230204 22:13:45.441" rpa="true" schemaversion="3">
-<suite id="s1" name="Tasks" source="/home/larober/PycharmProjects/Robotframework/RoboRecipes/tasks.robot">
+<robot generator="Robot 6.0.2 (Python 3.9.16 on linux)" generated="20230205 21:19:12.246" rpa="true" schemaversion="3">
+<suite id="s1" name="FindRecipe" source="/home/larober/PycharmProjects/Robotframework/RoboRecipes/FindRecipe.robot">
 <test id="s1-t1" name="Search For A Recipe" line="10">
 <kw name="Ask User For Recipe">
 <var>${recipe}</var>
@@ -8,21 +8,21 @@
 <var>${recipe}</var>
 <arg>What recipe are you looking for?</arg>
 <doc>Pauses execution and asks user to input a value.</doc>
-<msg timestamp="20230204 22:13:53.508" level="INFO">${recipe} = panettone</msg>
-<status status="PASS" starttime="20230204 22:13:47.891" endtime="20230204 22:13:53.508"/>
+<msg timestamp="20230205 21:19:20.157" level="INFO">${recipe} = panettone</msg>
+<status status="PASS" starttime="20230205 21:19:14.815" endtime="20230205 21:19:20.157"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${recipe}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230204 22:13:53.512" level="INFO">panettone</msg>
-<status status="PASS" starttime="20230204 22:13:53.510" endtime="20230204 22:13:53.513"/>
+<msg timestamp="20230205 21:19:20.161" level="INFO">panettone</msg>
+<status status="PASS" starttime="20230205 21:19:20.158" endtime="20230205 21:19:20.161"/>
 </kw>
 <return>
 <value>${recipe}</value>
-<status status="PASS" starttime="20230204 22:13:53.513" endtime="20230204 22:13:53.514"/>
+<status status="PASS" starttime="20230205 21:19:20.162" endtime="20230205 21:19:20.163"/>
 </return>
-<msg timestamp="20230204 22:13:53.516" level="INFO">${recipe} = panettone</msg>
-<status status="PASS" starttime="20230204 22:13:47.889" endtime="20230204 22:13:53.517"/>
+<msg timestamp="20230205 21:19:20.167" level="INFO">${recipe} = panettone</msg>
+<status status="PASS" starttime="20230205 21:19:14.813" endtime="20230205 21:19:20.167"/>
 </kw>
 <kw name="Open Page To Search For A Recipe">
 <arg>${recipe}</arg>
@@ -32,24 +32,34 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20230204 22:13:53.528" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/home/larober/PycharmProjects/Robotframework/RoboRecipes/browser/traces/f248a5fd-eb08-4bb4-af8d-e7d465d3bf17"}</msg>
-<msg timestamp="20230204 22:13:54.884" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/home/larober/PycharmProjects/Robotframework/RoboRecipes/browser/traces/f248a5fd-eb08-4bb4-af8d-e7d465d3bf17"}</msg>
-<status status="PASS" starttime="20230204 22:13:53.525" endtime="20230204 22:13:54.884"/>
+<msg timestamp="20230205 21:19:20.181" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/home/larober/PycharmProjects/Robotframework/RoboRecipes/browser/traces/303c5aa7-c927-4f5f-b744-46bd5aea09a8"}</msg>
+<msg timestamp="20230205 21:19:21.700" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/home/larober/PycharmProjects/Robotframework/RoboRecipes/browser/traces/303c5aa7-c927-4f5f-b744-46bd5aea09a8"}</msg>
+<status status="PASS" starttime="20230205 21:19:20.177" endtime="20230205 21:19:21.701"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>2m</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20230205 21:19:21.717" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20230205 21:19:21.702" endtime="20230205 21:19:21.717"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://www.chainbaker.com/?s=${recipe}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20230204 22:14:03.340" level="INFO">Successfully initialized new page object and opened url: https://www.chainbaker.com/?s=panettone</msg>
-<msg timestamp="20230204 22:14:03.341" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20230204 22:13:54.885" endtime="20230204 22:14:03.341"/>
+<msg timestamp="20230205 21:19:31.846" level="INFO">Successfully initialized new page object and opened url: https://www.chainbaker.com/?s=panettone</msg>
+<msg timestamp="20230205 21:19:31.847" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230205 21:19:21.718" endtime="20230205 21:19:31.847"/>
 </kw>
-<status status="PASS" starttime="20230204 22:13:53.523" endtime="20230204 22:14:03.342"/>
+<status status="PASS" starttime="20230205 21:19:20.175" endtime="20230205 21:19:31.849"/>
 </kw>
 <kw name="Select From Different Recipes Found">
+<var>${url}</var>
 <kw name="Get All Recipes Found">
 <var>${recipes}</var>
+<var>${dict}</var>
 <kw name="Get Elements" library="Browser">
 <var>${elements}</var>
 <arg>h2</arg>
@@ -57,21 +67,27 @@
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
 for all matched elements by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.083" level="INFO">Found 4 Locators successfully.</msg>
-<msg timestamp="20230204 22:14:04.084" level="INFO">${elements} = ['element=60c3bfe6-30cc-4a60-a3a9-8be052c0cdfd', 'element=1df56a94-66b1-4a7b-9413-0fefcb0e696e', 'element=521b6221-ccd6-4bac-9b34-de27b3efa08e', 'element=580ac131-1ecb-487b-8341-8d5663eea06a']</msg>
-<status status="PASS" starttime="20230204 22:14:03.349" endtime="20230204 22:14:04.084"/>
+<msg timestamp="20230205 21:19:32.190" level="INFO">Found 4 Locators successfully.</msg>
+<msg timestamp="20230205 21:19:32.191" level="INFO">${elements} = ['element=b88cdf0c-f1b5-42c4-bc8e-7c5329d970a7', 'element=7f6bd871-fcae-481b-b24b-c5fb89b13e5f', 'element=839ba11e-d9fd-4fcb-9211-a34648a4fc5a', 'element=0fa65f76-ee0b-4193-9b4d-4ba6bb0bd2e4']</msg>
+<status status="PASS" starttime="20230205 21:19:31.854" endtime="20230205 21:19:32.191"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>${recipes}</var>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20230204 22:14:04.086" level="INFO">${recipes} = []</msg>
-<status status="PASS" starttime="20230204 22:14:04.085" endtime="20230204 22:14:04.086"/>
+<msg timestamp="20230205 21:19:32.193" level="INFO">${recipes} = []</msg>
+<status status="PASS" starttime="20230205 21:19:32.192" endtime="20230205 21:19:32.194"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${recipe_href_dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230205 21:19:32.196" level="INFO">${recipe_href_dict} = {}</msg>
+<status status="PASS" starttime="20230205 21:19:32.194" endtime="20230205 21:19:32.196"/>
 </kw>
 <for flavor="IN">
 <var>${elem}</var>
 <value>@{elements}</value>
 <iter>
-<var name="${elem}">element=60c3bfe6-30cc-4a60-a3a9-8be052c0cdfd</var>
+<var name="${elem}">element=b88cdf0c-f1b5-42c4-bc8e-7c5329d970a7</var>
 <kw name="Get Property" library="Browser">
 <var>${recipe}</var>
 <arg>${elem}</arg>
@@ -80,8 +96,8 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.238" level="INFO">${recipe} = How to Make a Easy No-Knead Panettone</msg>
-<status status="PASS" starttime="20230204 22:14:04.089" endtime="20230204 22:14:04.238"/>
+<msg timestamp="20230205 21:19:32.652" level="INFO">${recipe} = How to Make a Easy No-Knead Panettone</msg>
+<status status="PASS" starttime="20230205 21:19:32.198" endtime="20230205 21:19:32.652"/>
 </kw>
 <kw name="Get Element" library="Browser">
 <var>${href}</var>
@@ -89,31 +105,38 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20230204 22:14:04.300" level="INFO">Locator found successfully.</msg>
-<msg timestamp="20230204 22:14:04.301" level="INFO">${href} = element=3b23d057-33af-4541-bf2b-f0cc708fcce5</msg>
-<status status="PASS" starttime="20230204 22:14:04.239" endtime="20230204 22:14:04.301"/>
+<msg timestamp="20230205 21:19:32.729" level="INFO">Locator found successfully.</msg>
+<msg timestamp="20230205 21:19:32.730" level="INFO">${href} = element=cb361e2a-5f7c-4710-8c46-3497201bb73d</msg>
+<status status="PASS" starttime="20230205 21:19:32.653" endtime="20230205 21:19:32.730"/>
 </kw>
 <kw name="Get Attribute" library="Browser">
-<var>${p}</var>
+<var>${href}</var>
 <arg>${href}</arg>
 <arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.393" level="INFO">${p} = https://www.chainbaker.com/no-knead-panettone/</msg>
-<status status="PASS" starttime="20230204 22:14:04.302" endtime="20230204 22:14:04.393"/>
+<msg timestamp="20230205 21:19:32.837" level="INFO">${href} = https://www.chainbaker.com/no-knead-panettone/</msg>
+<status status="PASS" starttime="20230205 21:19:32.731" endtime="20230205 21:19:32.838"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${recipe_href_dict}</arg>
+<arg>${recipe}</arg>
+<arg>${href}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20230205 21:19:32.838" endtime="20230205 21:19:32.840"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${recipes}</arg>
 <arg>${recipe}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230204 22:14:04.394" endtime="20230204 22:14:04.395"/>
+<status status="PASS" starttime="20230205 21:19:32.841" endtime="20230205 21:19:32.842"/>
 </kw>
-<status status="PASS" starttime="20230204 22:14:04.088" endtime="20230204 22:14:04.396"/>
+<status status="PASS" starttime="20230205 21:19:32.197" endtime="20230205 21:19:32.842"/>
 </iter>
 <iter>
-<var name="${elem}">element=1df56a94-66b1-4a7b-9413-0fefcb0e696e</var>
+<var name="${elem}">element=7f6bd871-fcae-481b-b24b-c5fb89b13e5f</var>
 <kw name="Get Property" library="Browser">
 <var>${recipe}</var>
 <arg>${elem}</arg>
@@ -122,8 +145,8 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.459" level="INFO">${recipe} = Krendel (Krendl), Russian Christmas Bread Recipe</msg>
-<status status="PASS" starttime="20230204 22:14:04.397" endtime="20230204 22:14:04.459"/>
+<msg timestamp="20230205 21:19:32.892" level="INFO">${recipe} = Krendel (Krendl), Russian Christmas Bread Recipe</msg>
+<status status="PASS" starttime="20230205 21:19:32.843" endtime="20230205 21:19:32.893"/>
 </kw>
 <kw name="Get Element" library="Browser">
 <var>${href}</var>
@@ -131,31 +154,38 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20230204 22:14:04.499" level="INFO">Locator found successfully.</msg>
-<msg timestamp="20230204 22:14:04.499" level="INFO">${href} = element=eb976007-e566-4e3b-b94e-a5b66425a582</msg>
-<status status="PASS" starttime="20230204 22:14:04.460" endtime="20230204 22:14:04.499"/>
+<msg timestamp="20230205 21:19:32.937" level="INFO">Locator found successfully.</msg>
+<msg timestamp="20230205 21:19:32.937" level="INFO">${href} = element=97cccb3a-e647-47d9-acc2-cfc07369266b</msg>
+<status status="PASS" starttime="20230205 21:19:32.893" endtime="20230205 21:19:32.938"/>
 </kw>
 <kw name="Get Attribute" library="Browser">
-<var>${p}</var>
+<var>${href}</var>
 <arg>${href}</arg>
 <arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.565" level="INFO">${p} = https://www.chainbaker.com/krendel-russian-christmas-bread-recipe/</msg>
-<status status="PASS" starttime="20230204 22:14:04.500" endtime="20230204 22:14:04.565"/>
+<msg timestamp="20230205 21:19:33.012" level="INFO">${href} = https://www.chainbaker.com/krendel-russian-christmas-bread-recipe/</msg>
+<status status="PASS" starttime="20230205 21:19:32.938" endtime="20230205 21:19:33.012"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${recipe_href_dict}</arg>
+<arg>${recipe}</arg>
+<arg>${href}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20230205 21:19:33.013" endtime="20230205 21:19:33.014"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${recipes}</arg>
 <arg>${recipe}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230204 22:14:04.566" endtime="20230204 22:14:04.567"/>
+<status status="PASS" starttime="20230205 21:19:33.015" endtime="20230205 21:19:33.016"/>
 </kw>
-<status status="PASS" starttime="20230204 22:14:04.397" endtime="20230204 22:14:04.567"/>
+<status status="PASS" starttime="20230205 21:19:32.843" endtime="20230205 21:19:33.017"/>
 </iter>
 <iter>
-<var name="${elem}">element=521b6221-ccd6-4bac-9b34-de27b3efa08e</var>
+<var name="${elem}">element=839ba11e-d9fd-4fcb-9211-a34648a4fc5a</var>
 <kw name="Get Property" library="Browser">
 <var>${recipe}</var>
 <arg>${elem}</arg>
@@ -164,8 +194,8 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.656" level="INFO">${recipe} = Simple Panettone, Italian Christmas Bread Recipe</msg>
-<status status="PASS" starttime="20230204 22:14:04.569" endtime="20230204 22:14:04.656"/>
+<msg timestamp="20230205 21:19:33.069" level="INFO">${recipe} = Simple Panettone, Italian Christmas Bread Recipe</msg>
+<status status="PASS" starttime="20230205 21:19:33.018" endtime="20230205 21:19:33.069"/>
 </kw>
 <kw name="Get Element" library="Browser">
 <var>${href}</var>
@@ -173,31 +203,38 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20230204 22:14:04.754" level="INFO">Locator found successfully.</msg>
-<msg timestamp="20230204 22:14:04.755" level="INFO">${href} = element=d507f5c2-48ea-492c-b50e-1d5113f8480c</msg>
-<status status="PASS" starttime="20230204 22:14:04.657" endtime="20230204 22:14:04.755"/>
+<msg timestamp="20230205 21:19:33.105" level="INFO">Locator found successfully.</msg>
+<msg timestamp="20230205 21:19:33.106" level="INFO">${href} = element=eae796d1-b81e-45ba-a4c9-9728a4b52906</msg>
+<status status="PASS" starttime="20230205 21:19:33.070" endtime="20230205 21:19:33.106"/>
 </kw>
 <kw name="Get Attribute" library="Browser">
-<var>${p}</var>
+<var>${href}</var>
 <arg>${href}</arg>
 <arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.816" level="INFO">${p} = https://www.chainbaker.com/simple-panettone-italian-christmas-bread-recipe/</msg>
-<status status="PASS" starttime="20230204 22:14:04.756" endtime="20230204 22:14:04.816"/>
+<msg timestamp="20230205 21:19:33.179" level="INFO">${href} = https://www.chainbaker.com/simple-panettone-italian-christmas-bread-recipe/</msg>
+<status status="PASS" starttime="20230205 21:19:33.107" endtime="20230205 21:19:33.179"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${recipe_href_dict}</arg>
+<arg>${recipe}</arg>
+<arg>${href}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20230205 21:19:33.180" endtime="20230205 21:19:33.181"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${recipes}</arg>
 <arg>${recipe}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230204 22:14:04.817" endtime="20230204 22:14:04.818"/>
+<status status="PASS" starttime="20230205 21:19:33.183" endtime="20230205 21:19:33.184"/>
 </kw>
-<status status="PASS" starttime="20230204 22:14:04.568" endtime="20230204 22:14:04.818"/>
+<status status="PASS" starttime="20230205 21:19:33.018" endtime="20230205 21:19:33.184"/>
 </iter>
 <iter>
-<var name="${elem}">element=580ac131-1ecb-487b-8341-8d5663eea06a</var>
+<var name="${elem}">element=0fa65f76-ee0b-4193-9b4d-4ba6bb0bd2e4</var>
 <kw name="Get Property" library="Browser">
 <var>${recipe}</var>
 <arg>${elem}</arg>
@@ -206,8 +243,8 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.862" level="INFO">${recipe} = 1 Dough vs 15 Glazes. Which one do you like most?</msg>
-<status status="PASS" starttime="20230204 22:14:04.819" endtime="20230204 22:14:04.862"/>
+<msg timestamp="20230205 21:19:33.236" level="INFO">${recipe} = 1 Dough vs 15 Glazes. Which one do you like most?</msg>
+<status status="PASS" starttime="20230205 21:19:33.186" endtime="20230205 21:19:33.236"/>
 </kw>
 <kw name="Get Element" library="Browser">
 <var>${href}</var>
@@ -215,51 +252,675 @@ for all matched elements by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20230204 22:14:04.898" level="INFO">Locator found successfully.</msg>
-<msg timestamp="20230204 22:14:04.899" level="INFO">${href} = element=b874c029-a299-4232-a240-d0973355021b</msg>
-<status status="PASS" starttime="20230204 22:14:04.863" endtime="20230204 22:14:04.899"/>
+<msg timestamp="20230205 21:19:33.294" level="INFO">Locator found successfully.</msg>
+<msg timestamp="20230205 21:19:33.294" level="INFO">${href} = element=45c821e1-afdc-4b33-afcf-125d97f05b44</msg>
+<status status="PASS" starttime="20230205 21:19:33.237" endtime="20230205 21:19:33.294"/>
 </kw>
 <kw name="Get Attribute" library="Browser">
-<var>${p}</var>
+<var>${href}</var>
 <arg>${href}</arg>
 <arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<msg timestamp="20230204 22:14:04.962" level="INFO">${p} = https://www.chainbaker.com/glazes/</msg>
-<status status="PASS" starttime="20230204 22:14:04.900" endtime="20230204 22:14:04.962"/>
+<msg timestamp="20230205 21:19:33.345" level="INFO">${href} = https://www.chainbaker.com/glazes/</msg>
+<status status="PASS" starttime="20230205 21:19:33.295" endtime="20230205 21:19:33.346"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${recipe_href_dict}</arg>
+<arg>${recipe}</arg>
+<arg>${href}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20230205 21:19:33.346" endtime="20230205 21:19:33.347"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${recipes}</arg>
 <arg>${recipe}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20230204 22:14:04.962" endtime="20230204 22:14:04.963"/>
+<status status="PASS" starttime="20230205 21:19:33.348" endtime="20230205 21:19:33.348"/>
 </kw>
-<status status="PASS" starttime="20230204 22:14:04.818" endtime="20230204 22:14:04.964"/>
+<status status="PASS" starttime="20230205 21:19:33.185" endtime="20230205 21:19:33.349"/>
 </iter>
-<status status="PASS" starttime="20230204 22:14:04.087" endtime="20230204 22:14:04.964"/>
+<status status="PASS" starttime="20230205 21:19:32.196" endtime="20230205 21:19:33.349"/>
 </for>
 <return>
 <value>${recipes}</value>
-<status status="PASS" starttime="20230204 22:14:04.964" endtime="20230204 22:14:04.965"/>
+<value>${recipe_href_dict}</value>
+<status status="PASS" starttime="20230205 21:19:33.350" endtime="20230205 21:19:33.350"/>
 </return>
-<msg timestamp="20230204 22:14:04.966" level="INFO">${recipes} = ['How to Make a Easy No-Knead Panettone', 'Krendel (Krendl), Russian Christmas Bread Recipe', 'Simple Panettone, Italian Christmas Bread Recipe', '1 Dough vs 15 Glazes. Which one do you like most?']</msg>
-<status status="PASS" starttime="20230204 22:14:03.345" endtime="20230204 22:14:04.966"/>
+<msg timestamp="20230205 21:19:33.351" level="INFO">${recipes} = ['How to Make a Easy No-Knead Panettone', 'Krendel (Krendl), Russian Christmas Bread Recipe', 'Simple Panettone, Italian Christmas Bread Recipe', '1 Dough vs 15 Glazes. Which one do you like most?']</msg>
+<msg timestamp="20230205 21:19:33.351" level="INFO">${dict} = {'How to Make a Easy No-Knead Panettone': 'https://www.chainbaker.com/no-knead-panettone/', 'Krendel (Krendl), Russian Christmas Bread Recipe': 'https://www.chainbaker.com/krendel-russian-christmas-br...</msg>
+<status status="PASS" starttime="20230205 21:19:31.852" endtime="20230205 21:19:33.351"/>
 </kw>
 <kw name="Get Selection From User" library="Dialogs">
 <var>${selected_recipe}</var>
 <arg>Recipes Found</arg>
 <arg>@{recipes}</arg>
 <doc>Pauses execution and asks user to select a value.</doc>
-<msg timestamp="20230204 22:14:31.933" level="INFO">${selected_recipe} = Krendel (Krendl), Russian Christmas Bread Recipe</msg>
-<status status="PASS" starttime="20230204 22:14:04.966" endtime="20230204 22:14:31.933"/>
+<msg timestamp="20230205 21:19:43.951" level="INFO">${selected_recipe} = How to Make a Easy No-Knead Panettone</msg>
+<status status="PASS" starttime="20230205 21:19:33.352" endtime="20230205 21:19:43.951"/>
 </kw>
-<status status="PASS" starttime="20230204 22:14:03.343" endtime="20230204 22:14:31.934"/>
+<kw name="Get From Dictionary" library="Collections">
+<var>${url}</var>
+<arg>${dict}</arg>
+<arg>${selected_recipe}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20230205 21:19:43.954" level="INFO">${url} = https://www.chainbaker.com/no-knead-panettone/</msg>
+<status status="PASS" starttime="20230205 21:19:43.952" endtime="20230205 21:19:43.955"/>
 </kw>
-<status status="PASS" starttime="20230204 22:13:47.877" endtime="20230204 22:14:31.937"/>
+<return>
+<value>${url}</value>
+<status status="PASS" starttime="20230205 21:19:43.955" endtime="20230205 21:19:43.956"/>
+</return>
+<msg timestamp="20230205 21:19:43.957" level="INFO">${url} = https://www.chainbaker.com/no-knead-panettone/</msg>
+<status status="PASS" starttime="20230205 21:19:31.850" endtime="20230205 21:19:43.957"/>
+</kw>
+<kw name="Go To Selected Recipe">
+<var>${element}</var>
+<arg>${url}</arg>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>2m 30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20230205 21:19:43.977" level="INFO">Set timeout to: 150000</msg>
+<status status="PASS" starttime="20230205 21:19:43.962" endtime="20230205 21:19:43.978"/>
+</kw>
+<kw name="Go To" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20230205 21:19:55.325" level="INFO">Successfully opened URL https://www.chainbaker.com/no-knead-panettone/</msg>
+<status status="PASS" starttime="20230205 21:19:43.979" endtime="20230205 21:19:55.326"/>
+</kw>
+<kw name="Get Element" library="Browser">
+<var>${element}</var>
+<arg>.et_pb_text_2</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<msg timestamp="20230205 21:19:55.900" level="INFO">Locator found successfully.</msg>
+<msg timestamp="20230205 21:19:55.900" level="INFO">${element} = element=714b85e5-3870-40ea-a8ef-239b5c7c491b</msg>
+<status status="PASS" starttime="20230205 21:19:55.327" endtime="20230205 21:19:55.901"/>
+</kw>
+<return>
+<value>${element}</value>
+<status status="PASS" starttime="20230205 21:19:55.901" endtime="20230205 21:19:55.902"/>
+</return>
+<msg timestamp="20230205 21:19:55.903" level="INFO">${element} = element=714b85e5-3870-40ea-a8ef-239b5c7c491b</msg>
+<status status="PASS" starttime="20230205 21:19:43.959" endtime="20230205 21:19:55.903"/>
+</kw>
+<kw name="Get Ingredients">
+<arg>${element}</arg>
+<kw name="Get Elements" library="Browser">
+<var>${ingredients}</var>
+<arg>${element}&gt;p</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.057" level="INFO">Found 39 Locators successfully.</msg>
+<msg timestamp="20230205 21:19:56.058" level="INFO">${ingredients} = ['element=b499016d-ca84-4cb8-8663-68346072dce5', 'element=5c908118-6a3c-4bb7-bd6d-f2d65aa031d2', 'element=2a2c415b-5208-494d-bb62-b67d7b2e0bc3', 'element=1c6f5c5d-59ee-4502-963f-ceb5f1b21666', 'elemen...</msg>
+<status status="PASS" starttime="20230205 21:19:55.913" endtime="20230205 21:19:56.059"/>
+</kw>
+<for flavor="IN">
+<var>${ingredient}</var>
+<value>@{ingredients}</value>
+<iter>
+<var name="${ingredient}">element=b499016d-ca84-4cb8-8663-68346072dce5</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.155" level="INFO">${text} = For the sponge (preferment) –</msg>
+<status status="PASS" starttime="20230205 21:19:56.061" endtime="20230205 21:19:56.156"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.060" endtime="20230205 21:19:56.156"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=5c908118-6a3c-4bb7-bd6d-f2d65aa031d2</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.252" level="INFO">${text} = 70g (2.5oz) strong white bread flour</msg>
+<status status="PASS" starttime="20230205 21:19:56.158" endtime="20230205 21:19:56.252"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.157" endtime="20230205 21:19:56.253"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=2a2c415b-5208-494d-bb62-b67d7b2e0bc3</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.373" level="INFO">${text} = 70g (2.5oz) water</msg>
+<status status="PASS" starttime="20230205 21:19:56.260" endtime="20230205 21:19:56.374"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.259" endtime="20230205 21:19:56.374"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=1c6f5c5d-59ee-4502-963f-ceb5f1b21666</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.462" level="INFO">${text} = 4g (0.14oz) instant dry yeast or 4.8g (0.16oz) active dry yeast or 12g (0.42oz) fresh yeast</msg>
+<status status="PASS" starttime="20230205 21:19:56.376" endtime="20230205 21:19:56.462"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.375" endtime="20230205 21:19:56.462"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=87344d35-f522-4010-b159-fa2e63010314</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.573" level="INFO">${text} =  </msg>
+<status status="PASS" starttime="20230205 21:19:56.464" endtime="20230205 21:19:56.573"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.463" endtime="20230205 21:19:56.573"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=91cd38e0-3c26-4f9e-ae7a-763bc9be27f1</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.688" level="INFO">${text} = For the 1st dough –</msg>
+<status status="PASS" starttime="20230205 21:19:56.581" endtime="20230205 21:19:56.688"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.574" endtime="20230205 21:19:56.689"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=fd7adb58-d0fb-4ee0-8be6-b57d29f0aed8</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.824" level="INFO">${text} = 250g (8.8oz) strong white bread flour</msg>
+<status status="PASS" starttime="20230205 21:19:56.691" endtime="20230205 21:19:56.824"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.690" endtime="20230205 21:19:56.825"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=160b3608-639e-4c4a-9caf-bcb8208c3dfd</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.909" level="INFO">${text} = 60g (2.1oz) sugar</msg>
+<status status="PASS" starttime="20230205 21:19:56.826" endtime="20230205 21:19:56.909"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.825" endtime="20230205 21:19:56.909"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=d64e3e64-a3e7-48a7-8791-d1dfbf69cb0c</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:56.987" level="INFO">${text} = 60g (2.1oz) soft butter</msg>
+<status status="PASS" starttime="20230205 21:19:56.911" endtime="20230205 21:19:56.987"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.910" endtime="20230205 21:19:56.988"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=5972eec9-edff-40ec-b3ba-d37de67129b8</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.049" level="INFO">${text} = 60g (2.1oz) water</msg>
+<status status="PASS" starttime="20230205 21:19:56.989" endtime="20230205 21:19:57.049"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:56.988" endtime="20230205 21:19:57.050"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=25f4ffa3-a0e9-41cd-82d0-33984d158e6e</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.095" level="INFO">${text} = 60g (2.1oz) egg yolks</msg>
+<status status="PASS" starttime="20230205 21:19:57.051" endtime="20230205 21:19:57.096"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.050" endtime="20230205 21:19:57.096"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=fd03d186-bbcc-41dc-8493-1c19a3b15eb3</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.150" level="INFO">${text} =  </msg>
+<status status="PASS" starttime="20230205 21:19:57.097" endtime="20230205 21:19:57.150"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.096" endtime="20230205 21:19:57.151"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=9800f980-4c6c-49cf-887f-0a0c58defaf3</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.196" level="INFO">${text} = For the 2nd dough –</msg>
+<status status="PASS" starttime="20230205 21:19:57.152" endtime="20230205 21:19:57.197"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.151" endtime="20230205 21:19:57.197"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=a9e97356-a95c-4e36-9a87-82f94acd1b9a</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.247" level="INFO">${text} = 80g (2.8oz) strong white bread flour</msg>
+<status status="PASS" starttime="20230205 21:19:57.198" endtime="20230205 21:19:57.247"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.197" endtime="20230205 21:19:57.247"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=f5fdda71-b7aa-4a75-a159-07361b27ab33</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.298" level="INFO">${text} = 60g (2.1oz) sugar</msg>
+<status status="PASS" starttime="20230205 21:19:57.248" endtime="20230205 21:19:57.299"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.248" endtime="20230205 21:19:57.299"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=5e2a6a79-5794-419c-bd0e-9986faa2dddf</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.350" level="INFO">${text} = 60g (2.1oz) egg yolks</msg>
+<status status="PASS" starttime="20230205 21:19:57.301" endtime="20230205 21:19:57.350"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.300" endtime="20230205 21:19:57.351"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=0659d7e2-0416-46a0-9416-d75ce9e59d55</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.410" level="INFO">${text} = 20g (0.7oz) honey</msg>
+<status status="PASS" starttime="20230205 21:19:57.352" endtime="20230205 21:19:57.411"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.351" endtime="20230205 21:19:57.411"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=a571a1f7-7251-4a6c-80ad-b7788d19e27e</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.484" level="INFO">${text} = 100g (3.5oz) soft butter</msg>
+<status status="PASS" starttime="20230205 21:19:57.413" endtime="20230205 21:19:57.484"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.412" endtime="20230205 21:19:57.485"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=cd551164-abbd-4faa-9d78-a31f10b38fb4</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.527" level="INFO">${text} = 7g (0.25oz) salt</msg>
+<status status="PASS" starttime="20230205 21:19:57.486" endtime="20230205 21:19:57.527"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.485" endtime="20230205 21:19:57.528"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=a2139c0b-0bd4-4efc-9a2d-3716b9ec23b5</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.573" level="INFO">${text} = 60g (2.1oz) water</msg>
+<status status="PASS" starttime="20230205 21:19:57.529" endtime="20230205 21:19:57.573"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.528" endtime="20230205 21:19:57.573"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=ccfee070-fef5-45e1-aa87-69f5ffdfdfd7</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.617" level="INFO">${text} = 80g (2.8oz) raisins</msg>
+<status status="PASS" starttime="20230205 21:19:57.574" endtime="20230205 21:19:57.617"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.573" endtime="20230205 21:19:57.617"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=9c3617aa-54dc-4736-a71f-9eaa2f7d6d48</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.686" level="INFO">${text} = 80g (2.8oz) candied peel</msg>
+<status status="PASS" starttime="20230205 21:19:57.619" endtime="20230205 21:19:57.687"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.618" endtime="20230205 21:19:57.687"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=3dd3090c-b6d7-4e6b-a6aa-63bad708686c</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.739" level="INFO">${text} = 60g (2.1oz) dried apricots</msg>
+<status status="PASS" starttime="20230205 21:19:57.689" endtime="20230205 21:19:57.739"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.688" endtime="20230205 21:19:57.740"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=6a4d62da-4f91-4cce-81ae-9f6c6a559d98</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.806" level="INFO">${text} = 10g (0.35oz) vanilla syrup/paste/essence or half of a vanilla pod</msg>
+<status status="PASS" starttime="20230205 21:19:57.742" endtime="20230205 21:19:57.806"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.741" endtime="20230205 21:19:57.806"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=d8ff032f-0b4c-40b2-86ac-7a5b17370670</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.851" level="INFO">${text} = Zest of two oranges</msg>
+<status status="PASS" starttime="20230205 21:19:57.808" endtime="20230205 21:19:57.851"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.807" endtime="20230205 21:19:57.851"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=69fa6be3-982c-4f49-bec8-0e65616e9688</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.895" level="INFO">${text} = Zest of two lemons</msg>
+<status status="PASS" starttime="20230205 21:19:57.852" endtime="20230205 21:19:57.895"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.851" endtime="20230205 21:19:57.895"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=72dcb6a2-091f-43d4-b0c8-594af14db28a</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.950" level="INFO">${text} =  </msg>
+<status status="PASS" starttime="20230205 21:19:57.897" endtime="20230205 21:19:57.950"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.896" endtime="20230205 21:19:57.950"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=89d72a8d-0ea2-4d43-be56-177a73df7e24</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:57.998" level="INFO">${text} = For the glaze –</msg>
+<status status="PASS" starttime="20230205 21:19:57.951" endtime="20230205 21:19:57.998"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.951" endtime="20230205 21:19:57.998"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=4c811b0d-e049-4400-a234-c4b5fdd83f3f</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.056" level="INFO">${text} = 2 egg whites</msg>
+<status status="PASS" starttime="20230205 21:19:57.999" endtime="20230205 21:19:58.056"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:57.999" endtime="20230205 21:19:58.057"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=6200bc71-5463-4307-bd71-e3ae6b264549</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.107" level="INFO">${text} = 40g (1.4oz) sugar</msg>
+<status status="PASS" starttime="20230205 21:19:58.059" endtime="20230205 21:19:58.107"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.058" endtime="20230205 21:19:58.107"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=51cff61d-19c8-4a30-b542-c78ab748e19d</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.156" level="INFO">${text} = 20g (0.7oz) almonds</msg>
+<status status="PASS" starttime="20230205 21:19:58.108" endtime="20230205 21:19:58.156"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.107" endtime="20230205 21:19:58.156"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=2490b071-5938-4969-95bc-dbe6103c7eea</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.199" level="INFO">${text} = 20g (0.7oz) hazelnuts</msg>
+<status status="PASS" starttime="20230205 21:19:58.158" endtime="20230205 21:19:58.200"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.157" endtime="20230205 21:19:58.200"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=4d1695d8-0656-4b2e-9064-10524110051f</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.241" level="INFO">${text} = 5g (0.17oz) flour</msg>
+<status status="PASS" starttime="20230205 21:19:58.201" endtime="20230205 21:19:58.242"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.200" endtime="20230205 21:19:58.242"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=05b6c4ff-b215-4f7e-9ea7-fa0bebb90d0a</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.284" level="INFO">${text} = 3g (0.1oz) cocoa powder</msg>
+<status status="PASS" starttime="20230205 21:19:58.243" endtime="20230205 21:19:58.284"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.242" endtime="20230205 21:19:58.285"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=975926ba-5827-481b-aea2-9c1933440e1a</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.336" level="INFO">${text} = *Blend to a smooth paste using a mixer or stick blender.</msg>
+<status status="PASS" starttime="20230205 21:19:58.286" endtime="20230205 21:19:58.336"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.285" endtime="20230205 21:19:58.337"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=c374e20c-3495-4852-b532-68b3b6d71a2a</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.380" level="INFO">${text} =  </msg>
+<status status="PASS" starttime="20230205 21:19:58.338" endtime="20230205 21:19:58.380"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.337" endtime="20230205 21:19:58.381"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=4d01d8f6-6cc2-41f3-b73e-e87a64b4a158</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.421" level="INFO">${text} = To decorate –</msg>
+<status status="PASS" starttime="20230205 21:19:58.382" endtime="20230205 21:19:58.422"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.381" endtime="20230205 21:19:58.422"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=a8fe201d-9333-4851-87f0-2051cb26079f</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.464" level="INFO">${text} = Almond halves</msg>
+<status status="PASS" starttime="20230205 21:19:58.423" endtime="20230205 21:19:58.464"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.422" endtime="20230205 21:19:58.465"/>
+</iter>
+<iter>
+<var name="${ingredient}">element=f4469747-e221-443a-9957-155a53c3ff28</var>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>${ingredient}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20230205 21:19:58.508" level="INFO">${text} = Sugar pearls</msg>
+<status status="PASS" starttime="20230205 21:19:58.466" endtime="20230205 21:19:58.509"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:58.465" endtime="20230205 21:19:58.509"/>
+</iter>
+<status status="PASS" starttime="20230205 21:19:56.059" endtime="20230205 21:19:58.510"/>
+</for>
+<status status="PASS" starttime="20230205 21:19:55.911" endtime="20230205 21:19:58.511"/>
+</kw>
+<status status="PASS" starttime="20230205 21:19:14.804" endtime="20230205 21:19:58.512"/>
 </test>
-<status status="PASS" starttime="20230204 22:13:45.444" endtime="20230204 22:14:32.374"/>
+<status status="PASS" starttime="20230205 21:19:12.248" endtime="20230205 21:19:58.966"/>
 </suite>
 <statistics>
 <total>
@@ -268,7 +929,7 @@ for all matched elements by ``selector``.</doc>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="FindRecipe">FindRecipe</stat>
 </suite>
 </statistics>
 <errors>
