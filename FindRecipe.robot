@@ -12,9 +12,7 @@ Library     JSONLibrary
 Search For A Recipe
     ${recipe}=    Ask User For Recipe
     Open Page To Search For A Recipe    ${recipe}
-    ${url}=    Select From Different Recipes Found
-    ${element}=    Go To Selected Recipe    ${url}
-    Get Ingredients    ${element}
+    Get Search Results
 
 
 *** Keywords ***
@@ -30,6 +28,19 @@ Open Page To Search For A Recipe
     ...    headless=False
     Set Browser Timeout    2m
     New Page    https://www.chainbaker.com/?s=${recipe}
+
+Get Search Results
+    ${results}=    Browser.Get Element Count    h2.not-found-title
+    IF    ${results} != ${0}
+        ${choice}=    Get Value From User    Recipe found. Search again?    Y/N
+        ${recipe}=    Ask User For Recipe
+        Open Page To Search For A Recipe    ${recipe}
+        Get Search Results
+    ELSE
+        ${url}=    Select From Different Recipes Found
+        ${element}=    Go To Selected Recipe    ${url}
+        Get Ingredients    ${element}
+    END
 
 Get All Recipes Found
     ${elements}=    Get Elements    h2
