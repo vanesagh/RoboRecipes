@@ -1,387 +1,282 @@
-{"level":30,"time":"2023-02-06T03:19:14.672Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Listening on 59949"}
-{"level":30,"time":"2023-02-06T03:19:14.796Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:14.798Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:14.809Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:14.809Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:20.190Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2023-02-06T03:19:21.685Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method newBrowser"}
-{"level":30,"time":"2023-02-06T03:19:21.726Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method newPage"}
-{"level":30,"time":"2023-02-06T03:19:21.727Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-02-06T03:19:21.778Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changed active context"}
-{"level":30,"time":"2023-02-06T03:19:22.975Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Video path: undefined"}
-{"level":30,"time":"2023-02-06T03:19:22.976Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changed active page"}
-{"level":30,"time":"2023-02-06T03:19:31.803Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method newPage"}
-{"level":30,"time":"2023-02-06T03:19:31.859Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElements"}
-{"level":30,"time":"2023-02-06T03:19:31.883Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is disabled, return Locator: h2 in page."}
-{"level":30,"time":"2023-02-06T03:19:31.884Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Wait element to reach attached state."}
-{"level":30,"time":"2023-02-06T03:19:32.184Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Found 4 elements."}
-{"level":30,"time":"2023-02-06T03:19:32.185Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 0 Locator in page."}
-{"level":30,"time":"2023-02-06T03:19:32.186Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElements"}
-{"level":30,"time":"2023-02-06T03:19:32.186Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 1 Locator in page."}
-{"level":30,"time":"2023-02-06T03:19:32.186Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 2 Locator in page."}
-{"level":30,"time":"2023-02-06T03:19:32.186Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 3 Locator in page."}
-{"level":30,"time":"2023-02-06T03:19:32.204Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:32.205Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=b88cdf0c-f1b5-42c4-bc8e-7c5329d970a7 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:32.206Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:32.644Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=b88cdf0c-f1b5-42c4-bc8e-7c5329d970a7 containing How to Make a Easy No-Knead Panettone"}
-{"level":30,"time":"2023-02-06T03:19:32.645Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:32.660Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:32.661Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"b88cdf0c-f1b5-42c4-bc8e-7c5329d970a7\",\"subSelector\":\"a[href]\"}"}
-{"level":30,"time":"2023-02-06T03:19:32.661Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
-{"level":30,"time":"2023-02-06T03:19:32.723Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:32.737Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:32.738Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=cb361e2a-5f7c-4710-8c46-3497201bb73d selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:32.738Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:32.832Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=cb361e2a-5f7c-4710-8c46-3497201bb73d containing https://www.chainbaker.com/no-knead-panettone/"}
-{"level":30,"time":"2023-02-06T03:19:32.833Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:32.847Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:32.847Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=7f6bd871-fcae-481b-b24b-c5fb89b13e5f selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:32.848Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:32.888Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=7f6bd871-fcae-481b-b24b-c5fb89b13e5f containing Krendel (Krendl), Russian Christmas Bread Recipe"}
-{"level":30,"time":"2023-02-06T03:19:32.889Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:32.897Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:32.897Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"7f6bd871-fcae-481b-b24b-c5fb89b13e5f\",\"subSelector\":\"a[href]\"}"}
-{"level":30,"time":"2023-02-06T03:19:32.897Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
-{"level":30,"time":"2023-02-06T03:19:32.933Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:32.945Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:32.945Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=97cccb3a-e647-47d9-acc2-cfc07369266b selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:32.946Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:33.007Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=97cccb3a-e647-47d9-acc2-cfc07369266b containing https://www.chainbaker.com/krendel-russian-christmas-bread-recipe/"}
-{"level":30,"time":"2023-02-06T03:19:33.007Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:33.022Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:33.022Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=839ba11e-d9fd-4fcb-9211-a34648a4fc5a selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:33.023Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:33.065Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=839ba11e-d9fd-4fcb-9211-a34648a4fc5a containing Simple Panettone, Italian Christmas Bread Recipe"}
-{"level":30,"time":"2023-02-06T03:19:33.065Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:33.074Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:33.074Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"839ba11e-d9fd-4fcb-9211-a34648a4fc5a\",\"subSelector\":\"a[href]\"}"}
-{"level":30,"time":"2023-02-06T03:19:33.074Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
-{"level":30,"time":"2023-02-06T03:19:33.102Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:33.110Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:33.110Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=eae796d1-b81e-45ba-a4c9-9728a4b52906 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:33.110Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:33.175Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=eae796d1-b81e-45ba-a4c9-9728a4b52906 containing https://www.chainbaker.com/simple-panettone-italian-christmas-bread-recipe/"}
-{"level":30,"time":"2023-02-06T03:19:33.175Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:33.191Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:33.191Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=0fa65f76-ee0b-4193-9b4d-4ba6bb0bd2e4 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:33.191Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:33.229Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=0fa65f76-ee0b-4193-9b4d-4ba6bb0bd2e4 containing 1 Dough vs 15 Glazes. Which one do you like most?"}
-{"level":30,"time":"2023-02-06T03:19:33.229Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2023-02-06T03:19:33.254Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:33.255Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"0fa65f76-ee0b-4193-9b4d-4ba6bb0bd2e4\",\"subSelector\":\"a[href]\"}"}
-{"level":30,"time":"2023-02-06T03:19:33.255Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
-{"level":30,"time":"2023-02-06T03:19:33.291Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:33.297Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:33.298Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=45c821e1-afdc-4b33-afcf-125d97f05b44 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:33.298Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:33.341Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=45c821e1-afdc-4b33-afcf-125d97f05b44 containing https://www.chainbaker.com/glazes/"}
-{"level":30,"time":"2023-02-06T03:19:33.342Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2023-02-06T03:19:43.984Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method goTo"}
-{"level":30,"time":"2023-02-06T03:19:55.321Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method goTo"}
-{"level":30,"time":"2023-02-06T03:19:55.331Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:55.332Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with .et_pb_text_2 in page."}
-{"level":30,"time":"2023-02-06T03:19:55.891Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
-{"level":30,"time":"2023-02-06T03:19:55.922Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getElements"}
-{"level":30,"time":"2023-02-06T03:19:55.922Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:55.923Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Wait element to reach attached state."}
-{"level":30,"time":"2023-02-06T03:19:55.922Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Strict mode is disabled, return Locator: p with locator."}
-{"level":30,"time":"2023-02-06T03:19:56.044Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Found 39 elements."}
-{"level":30,"time":"2023-02-06T03:19:56.045Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getElements"}
-{"level":30,"time":"2023-02-06T03:19:56.045Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 0 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.045Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.045Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 1 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 2 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 3 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 4 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.046Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 5 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 6 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 7 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 8 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 9 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.047Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 10 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 11 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 12 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 13 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 14 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 15 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 16 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.048Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 17 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 18 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 19 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 20 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 21 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 22 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.049Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 23 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 24 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 25 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 26 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 27 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 28 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.050Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 29 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 30 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 31 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 32 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 33 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 34 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.051Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 35 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 36 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 37 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"714b85e5-3870-40ea-a8ef-239b5c7c491b\",\"subSelector\":\"p\"}"}
-{"level":30,"time":"2023-02-06T03:19:56.052Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Find 38 Locator within locator."}
-{"level":30,"time":"2023-02-06T03:19:56.070Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.071Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=b499016d-ca84-4cb8-8663-68346072dce5 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.071Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.150Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=b499016d-ca84-4cb8-8663-68346072dce5 containing For the sponge (preferment) –"}
-{"level":30,"time":"2023-02-06T03:19:56.151Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.162Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.162Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=5c908118-6a3c-4bb7-bd6d-f2d65aa031d2 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.162Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.248Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=5c908118-6a3c-4bb7-bd6d-f2d65aa031d2 containing 70g (2.5oz) strong white bread flour"}
-{"level":30,"time":"2023-02-06T03:19:56.249Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.269Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.269Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=2a2c415b-5208-494d-bb62-b67d7b2e0bc3 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.269Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.369Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=2a2c415b-5208-494d-bb62-b67d7b2e0bc3 containing 70g (2.5oz) water"}
-{"level":30,"time":"2023-02-06T03:19:56.369Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.380Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.381Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=1c6f5c5d-59ee-4502-963f-ceb5f1b21666 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.381Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.456Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=1c6f5c5d-59ee-4502-963f-ceb5f1b21666 containing 4g (0.14oz) instant dry yeast or 4.8g (0.16oz) active dry yeast or 12g (0.42oz) fresh yeast"}
-{"level":30,"time":"2023-02-06T03:19:56.456Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.468Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.469Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=87344d35-f522-4010-b159-fa2e63010314 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.469Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.569Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=87344d35-f522-4010-b159-fa2e63010314 containing  "}
-{"level":30,"time":"2023-02-06T03:19:56.569Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.585Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.586Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=91cd38e0-3c26-4f9e-ae7a-763bc9be27f1 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.586Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.684Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=91cd38e0-3c26-4f9e-ae7a-763bc9be27f1 containing For the 1st dough –"}
-{"level":30,"time":"2023-02-06T03:19:56.685Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.694Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.695Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=fd7adb58-d0fb-4ee0-8be6-b57d29f0aed8 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.696Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.820Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=fd7adb58-d0fb-4ee0-8be6-b57d29f0aed8 containing 250g (8.8oz) strong white bread flour"}
-{"level":30,"time":"2023-02-06T03:19:56.820Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.830Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.830Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=160b3608-639e-4c4a-9caf-bcb8208c3dfd selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.831Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.905Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=160b3608-639e-4c4a-9caf-bcb8208c3dfd containing 60g (2.1oz) sugar"}
-{"level":30,"time":"2023-02-06T03:19:56.906Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.913Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.914Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=d64e3e64-a3e7-48a7-8791-d1dfbf69cb0c selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.914Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:56.982Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=d64e3e64-a3e7-48a7-8791-d1dfbf69cb0c containing 60g (2.1oz) soft butter"}
-{"level":30,"time":"2023-02-06T03:19:56.982Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.998Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:56.998Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=5972eec9-edff-40ec-b3ba-d37de67129b8 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:56.999Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.045Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=5972eec9-edff-40ec-b3ba-d37de67129b8 containing 60g (2.1oz) water"}
-{"level":30,"time":"2023-02-06T03:19:57.045Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.054Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.055Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=25f4ffa3-a0e9-41cd-82d0-33984d158e6e selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.055Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.092Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=25f4ffa3-a0e9-41cd-82d0-33984d158e6e containing 60g (2.1oz) egg yolks"}
-{"level":30,"time":"2023-02-06T03:19:57.092Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.100Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.100Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=fd03d186-bbcc-41dc-8493-1c19a3b15eb3 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.100Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.147Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=fd03d186-bbcc-41dc-8493-1c19a3b15eb3 containing  "}
-{"level":30,"time":"2023-02-06T03:19:57.147Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.154Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.154Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=9800f980-4c6c-49cf-887f-0a0c58defaf3 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.154Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.193Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=9800f980-4c6c-49cf-887f-0a0c58defaf3 containing For the 2nd dough –"}
-{"level":30,"time":"2023-02-06T03:19:57.193Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.201Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.202Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=a9e97356-a95c-4e36-9a87-82f94acd1b9a selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.202Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.244Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=a9e97356-a95c-4e36-9a87-82f94acd1b9a containing 80g (2.8oz) strong white bread flour"}
-{"level":30,"time":"2023-02-06T03:19:57.244Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.251Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.251Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=f5fdda71-b7aa-4a75-a159-07361b27ab33 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.251Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.295Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=f5fdda71-b7aa-4a75-a159-07361b27ab33 containing 60g (2.1oz) sugar"}
-{"level":30,"time":"2023-02-06T03:19:57.295Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.305Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.305Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=5e2a6a79-5794-419c-bd0e-9986faa2dddf selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.305Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.347Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=5e2a6a79-5794-419c-bd0e-9986faa2dddf containing 60g (2.1oz) egg yolks"}
-{"level":30,"time":"2023-02-06T03:19:57.347Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.355Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.355Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=0659d7e2-0416-46a0-9416-d75ce9e59d55 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.355Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.407Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=0659d7e2-0416-46a0-9416-d75ce9e59d55 containing 20g (0.7oz) honey"}
-{"level":30,"time":"2023-02-06T03:19:57.407Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.416Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.416Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=a571a1f7-7251-4a6c-80ad-b7788d19e27e selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.416Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.481Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=a571a1f7-7251-4a6c-80ad-b7788d19e27e containing 100g (3.5oz) soft butter"}
-{"level":30,"time":"2023-02-06T03:19:57.481Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.489Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.489Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=cd551164-abbd-4faa-9d78-a31f10b38fb4 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.489Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.524Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=cd551164-abbd-4faa-9d78-a31f10b38fb4 containing 7g (0.25oz) salt"}
-{"level":30,"time":"2023-02-06T03:19:57.524Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.531Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.531Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=a2139c0b-0bd4-4efc-9a2d-3716b9ec23b5 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.531Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.569Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=a2139c0b-0bd4-4efc-9a2d-3716b9ec23b5 containing 60g (2.1oz) water"}
-{"level":30,"time":"2023-02-06T03:19:57.570Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.576Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.576Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=ccfee070-fef5-45e1-aa87-69f5ffdfdfd7 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.576Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.613Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=ccfee070-fef5-45e1-aa87-69f5ffdfdfd7 containing 80g (2.8oz) raisins"}
-{"level":30,"time":"2023-02-06T03:19:57.614Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.622Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.622Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=9c3617aa-54dc-4736-a71f-9eaa2f7d6d48 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.622Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.683Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=9c3617aa-54dc-4736-a71f-9eaa2f7d6d48 containing 80g (2.8oz) candied peel"}
-{"level":30,"time":"2023-02-06T03:19:57.683Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.692Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.692Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=3dd3090c-b6d7-4e6b-a6aa-63bad708686c selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.693Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.736Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=3dd3090c-b6d7-4e6b-a6aa-63bad708686c containing 60g (2.1oz) dried apricots"}
-{"level":30,"time":"2023-02-06T03:19:57.736Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.745Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.745Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=6a4d62da-4f91-4cce-81ae-9f6c6a559d98 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.745Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.802Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=6a4d62da-4f91-4cce-81ae-9f6c6a559d98 containing 10g (0.35oz) vanilla syrup/paste/essence or half of a vanilla pod"}
-{"level":30,"time":"2023-02-06T03:19:57.802Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.810Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.811Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=d8ff032f-0b4c-40b2-86ac-7a5b17370670 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.811Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.847Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=d8ff032f-0b4c-40b2-86ac-7a5b17370670 containing Zest of two oranges"}
-{"level":30,"time":"2023-02-06T03:19:57.848Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.854Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.854Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=69fa6be3-982c-4f49-bec8-0e65616e9688 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.855Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.891Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=69fa6be3-982c-4f49-bec8-0e65616e9688 containing Zest of two lemons"}
-{"level":30,"time":"2023-02-06T03:19:57.892Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.900Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.900Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=72dcb6a2-091f-43d4-b0c8-594af14db28a selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.900Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.947Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=72dcb6a2-091f-43d4-b0c8-594af14db28a containing  "}
-{"level":30,"time":"2023-02-06T03:19:57.947Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.954Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:57.954Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=89d72a8d-0ea2-4d43-be56-177a73df7e24 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:57.954Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:57.994Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=89d72a8d-0ea2-4d43-be56-177a73df7e24 containing For the glaze –"}
-{"level":30,"time":"2023-02-06T03:19:57.994Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.002Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.002Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=4c811b0d-e049-4400-a234-c4b5fdd83f3f selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.002Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.053Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=4c811b0d-e049-4400-a234-c4b5fdd83f3f containing 2 egg whites"}
-{"level":30,"time":"2023-02-06T03:19:58.053Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.063Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.063Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=6200bc71-5463-4307-bd71-e3ae6b264549 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.063Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.103Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=6200bc71-5463-4307-bd71-e3ae6b264549 containing 40g (1.4oz) sugar"}
-{"level":30,"time":"2023-02-06T03:19:58.104Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.110Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.111Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=51cff61d-19c8-4a30-b542-c78ab748e19d selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.111Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.153Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=51cff61d-19c8-4a30-b542-c78ab748e19d containing 20g (0.7oz) almonds"}
-{"level":30,"time":"2023-02-06T03:19:58.153Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.161Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.161Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=2490b071-5938-4969-95bc-dbe6103c7eea selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.161Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.196Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=2490b071-5938-4969-95bc-dbe6103c7eea containing 20g (0.7oz) hazelnuts"}
-{"level":30,"time":"2023-02-06T03:19:58.196Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.203Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.203Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=4d1695d8-0656-4b2e-9064-10524110051f selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.203Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.238Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=4d1695d8-0656-4b2e-9064-10524110051f containing 5g (0.17oz) flour"}
-{"level":30,"time":"2023-02-06T03:19:58.238Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.246Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.246Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=05b6c4ff-b215-4f7e-9ea7-fa0bebb90d0a selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.246Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.281Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=05b6c4ff-b215-4f7e-9ea7-fa0bebb90d0a containing 3g (0.1oz) cocoa powder"}
-{"level":30,"time":"2023-02-06T03:19:58.281Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.288Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.289Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=975926ba-5827-481b-aea2-9c1933440e1a selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.289Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.333Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=975926ba-5827-481b-aea2-9c1933440e1a containing *Blend to a smooth paste using a mixer or stick blender."}
-{"level":30,"time":"2023-02-06T03:19:58.333Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.341Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.341Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=c374e20c-3495-4852-b532-68b3b6d71a2a selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.341Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.377Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=c374e20c-3495-4852-b532-68b3b6d71a2a containing  "}
-{"level":30,"time":"2023-02-06T03:19:58.377Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.385Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.385Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=4d01d8f6-6cc2-41f3-b73e-e87a64b4a158 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.385Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.418Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=4d01d8f6-6cc2-41f3-b73e-e87a64b4a158 containing To decorate –"}
-{"level":30,"time":"2023-02-06T03:19:58.419Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.425Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.425Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=a8fe201d-9333-4851-87f0-2051cb26079f selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.425Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.461Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=a8fe201d-9333-4851-87f0-2051cb26079f containing Almond halves"}
-{"level":30,"time":"2023-02-06T03:19:58.461Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.468Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.469Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"element=f4469747-e221-443a-9957-155a53c3ff28 selector parsed without children"}
-{"level":30,"time":"2023-02-06T03:19:58.469Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
-{"level":30,"time":"2023-02-06T03:19:58.505Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=f4469747-e221-443a-9957-155a53c3ff28 containing Sugar pearls"}
-{"level":30,"time":"2023-02-06T03:19:58.505Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
-{"level":30,"time":"2023-02-06T03:19:58.515Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.521Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.526Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.532Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.538Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changed active context"}
-{"level":30,"time":"2023-02-06T03:19:58.539Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changing current active page"}
-{"level":30,"time":"2023-02-06T03:19:58.539Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changed active page"}
-{"level":30,"time":"2023-02-06T03:19:58.552Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.560Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.570Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-02-06T03:19:58.571Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-02-06T03:19:58.588Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-02-06T03:19:58.589Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-02-06T03:19:58.602Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.607Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.613Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changed active context"}
-{"level":30,"time":"2023-02-06T03:19:58.613Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changing current active page"}
-{"level":30,"time":"2023-02-06T03:19:58.613Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Changed active page"}
-{"level":30,"time":"2023-02-06T03:19:58.621Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method closeContext"}
-{"level":30,"time":"2023-02-06T03:19:58.793Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Removed page=0269cdf0-43b5-4b26-b68f-6709a9eb38ce from context=20588397-cb82-40bd-b869-ee63d1df13a8 page stack"}
-{"level":30,"time":"2023-02-06T03:19:58.953Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method closeContext"}
-{"level":30,"time":"2023-02-06T03:19:58.971Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:58.971Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-02-06T03:19:59.176Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2023-02-06T03:19:59.465Z","pid":1381497,"hostname":"larober-Vostro-3400","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2023-02-08T00:22:49.264Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Listening on 43081"}
+{"level":30,"time":"2023-02-08T00:22:49.326Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:22:49.327Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:22:49.334Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:22:49.334Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:03.148Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-02-08T00:23:03.669Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-02-08T00:23:03.681Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-02-08T00:23:03.682Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-02-08T00:23:03.712Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changed active context"}
+{"level":30,"time":"2023-02-08T00:23:04.567Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Video path: undefined"}
+{"level":30,"time":"2023-02-08T00:23:04.568Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changed active page"}
+{"level":30,"time":"2023-02-08T00:23:09.489Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method newPage"}
+{"level":30,"time":"2023-02-08T00:23:09.500Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElements"}
+{"level":30,"time":"2023-02-08T00:23:09.502Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is disabled, return Locator: h2 in page."}
+{"level":30,"time":"2023-02-08T00:23:09.503Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2023-02-08T00:23:09.643Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Found 4 elements."}
+{"level":30,"time":"2023-02-08T00:23:09.644Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 0 Locator in page."}
+{"level":30,"time":"2023-02-08T00:23:09.653Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElements"}
+{"level":30,"time":"2023-02-08T00:23:09.645Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 1 Locator in page."}
+{"level":30,"time":"2023-02-08T00:23:09.645Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 2 Locator in page."}
+{"level":30,"time":"2023-02-08T00:23:09.645Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 3 Locator in page."}
+{"level":30,"time":"2023-02-08T00:23:09.666Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:09.667Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=462a9f64-bf27-4a9d-a1f0-3e70cd3db721 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:09.668Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:09.901Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=462a9f64-bf27-4a9d-a1f0-3e70cd3db721 containing How to Make a Easy No-Knead Panettone"}
+{"level":30,"time":"2023-02-08T00:23:09.902Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:09.909Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:09.910Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"462a9f64-bf27-4a9d-a1f0-3e70cd3db721\",\"subSelector\":\"a[href]\"}"}
+{"level":30,"time":"2023-02-08T00:23:09.910Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
+{"level":30,"time":"2023-02-08T00:23:09.938Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:09.947Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:09.948Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=d9f72e4d-91aa-4e20-8f0e-0ebc19cee3bc selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:09.948Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.006Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=d9f72e4d-91aa-4e20-8f0e-0ebc19cee3bc containing https://www.chainbaker.com/no-knead-panettone/"}
+{"level":30,"time":"2023-02-08T00:23:10.006Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:10.014Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:10.015Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=8dfcaead-35a5-40af-8dcb-609cda70fead selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:10.015Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.046Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=8dfcaead-35a5-40af-8dcb-609cda70fead containing Krendel (Krendl), Russian Christmas Bread Recipe"}
+{"level":30,"time":"2023-02-08T00:23:10.046Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:10.052Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:10.053Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"8dfcaead-35a5-40af-8dcb-609cda70fead\",\"subSelector\":\"a[href]\"}"}
+{"level":30,"time":"2023-02-08T00:23:10.053Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
+{"level":30,"time":"2023-02-08T00:23:10.090Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:10.098Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:10.099Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=1baff3d7-2e32-4de4-8b05-ab44e7fc019c selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:10.099Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.148Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=1baff3d7-2e32-4de4-8b05-ab44e7fc019c containing https://www.chainbaker.com/krendel-russian-christmas-bread-recipe/"}
+{"level":30,"time":"2023-02-08T00:23:10.148Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:10.158Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:10.158Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=70a820fd-4f91-43b3-b197-98683f0f0e60 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:10.158Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.183Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=70a820fd-4f91-43b3-b197-98683f0f0e60 containing Simple Panettone, Italian Christmas Bread Recipe"}
+{"level":30,"time":"2023-02-08T00:23:10.184Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:10.190Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:10.190Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"70a820fd-4f91-43b3-b197-98683f0f0e60\",\"subSelector\":\"a[href]\"}"}
+{"level":30,"time":"2023-02-08T00:23:10.190Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
+{"level":30,"time":"2023-02-08T00:23:10.210Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:10.215Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:10.215Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=d8c83252-6427-47da-870a-b8861e8e1aac selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:10.215Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.238Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=d8c83252-6427-47da-870a-b8861e8e1aac containing https://www.chainbaker.com/simple-panettone-italian-christmas-bread-recipe/"}
+{"level":30,"time":"2023-02-08T00:23:10.238Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:10.244Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:10.244Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=5db92a56-f423-4f82-a2e1-2d1b7cce80b5 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:10.244Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.261Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved dom property for element element=5db92a56-f423-4f82-a2e1-2d1b7cce80b5 containing 1 Dough vs 15 Glazes. Which one do you like most?"}
+{"level":30,"time":"2023-02-08T00:23:10.261Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2023-02-08T00:23:10.265Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:10.265Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"5db92a56-f423-4f82-a2e1-2d1b7cce80b5\",\"subSelector\":\"a[href]\"}"}
+{"level":30,"time":"2023-02-08T00:23:10.265Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with a[href] within locator."}
+{"level":30,"time":"2023-02-08T00:23:10.278Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:10.283Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:10.283Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=f1f1ec1f-4f8c-4e6a-8c25-649324ab2c2a selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:10.283Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:10.308Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved attribute for element element=f1f1ec1f-4f8c-4e6a-8c25-649324ab2c2a containing https://www.chainbaker.com/glazes/"}
+{"level":30,"time":"2023-02-08T00:23:10.308Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2023-02-08T00:23:16.143Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method goTo"}
+{"level":30,"time":"2023-02-08T00:23:22.768Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method goTo"}
+{"level":30,"time":"2023-02-08T00:23:22.777Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:22.778Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is enabled, find Locator with .et_pb_text_2 in page."}
+{"level":30,"time":"2023-02-08T00:23:23.172Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElement"}
+{"level":30,"time":"2023-02-08T00:23:23.192Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getElements"}
+{"level":30,"time":"2023-02-08T00:23:23.193Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.193Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2023-02-08T00:23:23.193Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Strict mode is disabled, return Locator: p with locator."}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Found 24 elements."}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getElements"}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 0 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 1 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 2 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.394Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 3 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 4 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 5 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 6 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 7 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 8 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 9 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 10 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 11 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.395Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 12 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 13 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 14 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 15 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 16 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 17 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 18 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 19 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 20 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 21 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 22 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Split element= selector into parts: {\"elementHandleId\":\"764a996d-833c-43d9-80bc-f10e64af65d3\",\"subSelector\":\"p\"}"}
+{"level":30,"time":"2023-02-08T00:23:23.396Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Find 23 Locator within locator."}
+{"level":30,"time":"2023-02-08T00:23:23.412Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.413Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=99b78094-d700-494d-8670-afadb40a72f7 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:23.415Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:23.641Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=99b78094-d700-494d-8670-afadb40a72f7 containing For the dough –"}
+{"level":30,"time":"2023-02-08T00:23:23.641Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.714Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.714Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=eb72c473-10cf-4120-a09d-3b5ec50f8540 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:23.714Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:23.806Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=eb72c473-10cf-4120-a09d-3b5ec50f8540 containing 300g (10.5oz) strong white bread flour"}
+{"level":30,"time":"2023-02-08T00:23:23.806Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.891Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.891Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=c5f143e2-7584-4a89-a314-bb0ce43b94ad selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:23.891Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:23.928Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=c5f143e2-7584-4a89-a314-bb0ce43b94ad containing 2 egg yolks *cold from the fridge"}
+{"level":30,"time":"2023-02-08T00:23:23.929Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.953Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:23.953Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=c3dce8d2-5dcc-4b2d-82ab-1956e1cab096 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:23.953Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:23.990Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=c3dce8d2-5dcc-4b2d-82ab-1956e1cab096 containing 50g (1.75oz) soft butter"}
+{"level":30,"time":"2023-02-08T00:23:23.990Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.050Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.051Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=f7c15709-8f51-4ab7-a415-4ee8373c9c54 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:24.051Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:24.090Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=f7c15709-8f51-4ab7-a415-4ee8373c9c54 containing 6g (0.2oz) salt"}
+{"level":30,"time":"2023-02-08T00:23:24.090Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.144Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.144Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=578b0511-13ee-4631-b17c-95cbf3e8ef9b selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:24.144Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:24.172Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=578b0511-13ee-4631-b17c-95cbf3e8ef9b containing 3g (0.1oz) dry yeast or 3x the amount of fresh yeast"}
+{"level":30,"time":"2023-02-08T00:23:24.172Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.246Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.246Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=31207f09-cc20-4c5c-855a-9c56fef22686 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:24.246Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:24.612Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=31207f09-cc20-4c5c-855a-9c56fef22686 containing 40g (1.4oz) sugar"}
+{"level":30,"time":"2023-02-08T00:23:24.612Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.680Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.680Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=0c7232f7-74eb-4f29-910f-fc5341780b71 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:24.680Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:24.759Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=0c7232f7-74eb-4f29-910f-fc5341780b71 containing 2g (0.07oz) cinnamon"}
+{"level":30,"time":"2023-02-08T00:23:24.760Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.846Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:24.846Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=f95ec25d-befb-4217-867a-0ca07caeb927 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:24.846Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.025Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=f95ec25d-befb-4217-867a-0ca07caeb927 containing 2g (0.07oz) vanilla paste or syrup"}
+{"level":30,"time":"2023-02-08T00:23:25.025Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.109Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.109Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=3dc30367-9273-41be-b697-1fe4fdae8094 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.109Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.228Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=3dc30367-9273-41be-b697-1fe4fdae8094 containing 140g (5oz) milk at 8C (46F) if your kitchen is between 22-24C (71-75F)"}
+{"level":30,"time":"2023-02-08T00:23:25.229Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.323Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.323Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=7d41d559-458c-46c6-bb3a-f1956e9a9862 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.323Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.374Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=7d41d559-458c-46c6-bb3a-f1956e9a9862 containing To learn more about dough temperature control click here."}
+{"level":30,"time":"2023-02-08T00:23:25.375Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.389Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.389Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=fd1d5a3c-f1c6-49d7-94f8-0fa756e33d6b selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.389Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.420Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=fd1d5a3c-f1c6-49d7-94f8-0fa756e33d6b containing  "}
+{"level":30,"time":"2023-02-08T00:23:25.420Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.436Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.436Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=54fa358d-97d2-4f2a-a7e0-f11609caded8 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.436Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.466Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=54fa358d-97d2-4f2a-a7e0-f11609caded8 containing For the filling –"}
+{"level":30,"time":"2023-02-08T00:23:25.467Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.481Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.481Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=3713d864-125f-44d3-8ab3-b679533fcbca selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.481Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.511Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=3713d864-125f-44d3-8ab3-b679533fcbca containing 1 large apple, diced"}
+{"level":30,"time":"2023-02-08T00:23:25.511Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.523Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.523Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=684f9dfa-656d-40b7-8b9e-78e37f5c5234 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.523Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.552Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=684f9dfa-656d-40b7-8b9e-78e37f5c5234 containing 40g (1.4oz) chopped dried prunes"}
+{"level":30,"time":"2023-02-08T00:23:25.552Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.606Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.607Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=2869abab-7694-4808-9595-f02721c646c4 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.607Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.632Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=2869abab-7694-4808-9595-f02721c646c4 containing 40g (1.4oz) chopped dried pears"}
+{"level":30,"time":"2023-02-08T00:23:25.632Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.684Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.684Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=b0d17130-0ce3-48d5-ad61-25a9858833c7 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.685Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.707Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=b0d17130-0ce3-48d5-ad61-25a9858833c7 containing 40g (1.4oz) chopped dried apricots"}
+{"level":30,"time":"2023-02-08T00:23:25.707Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.761Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.761Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=8a834920-7963-4db6-b445-8a3b37e4e874 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.761Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.783Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=8a834920-7963-4db6-b445-8a3b37e4e874 containing 30g (1oz) sugar"}
+{"level":30,"time":"2023-02-08T00:23:25.783Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.834Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.835Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=9ddcd4a1-dd8c-4ef0-a724-14c05c0781ac selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.835Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:25.892Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=9ddcd4a1-dd8c-4ef0-a724-14c05c0781ac containing 20g (0.7oz) butter"}
+{"level":30,"time":"2023-02-08T00:23:25.892Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.975Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:25.975Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=c4336921-2594-406d-81a7-95145fd7082f selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:25.975Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:26.012Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=c4336921-2594-406d-81a7-95145fd7082f containing  "}
+{"level":30,"time":"2023-02-08T00:23:26.012Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.029Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.029Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=92d8b281-30ea-449c-bffc-2acb9c6a3ef9 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:26.029Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:26.084Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=92d8b281-30ea-449c-bffc-2acb9c6a3ef9 containing For the glaze –"}
+{"level":30,"time":"2023-02-08T00:23:26.085Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.107Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.107Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=277a4d2f-593c-4801-9dd5-c298da74537b selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:26.108Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:26.137Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=277a4d2f-593c-4801-9dd5-c298da74537b containing 150g (5.3oz) icing sugar"}
+{"level":30,"time":"2023-02-08T00:23:26.139Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.203Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.203Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=ed07d861-41b7-4390-959a-30112a4bbbe6 selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:26.203Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:26.229Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=ed07d861-41b7-4390-959a-30112a4bbbe6 containing 2 lemons worth of juice"}
+{"level":30,"time":"2023-02-08T00:23:26.229Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.241Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.241Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"element=021f5631-424b-4dd4-8ebb-9adf2f537eac selector parsed without children"}
+{"level":30,"time":"2023-02-08T00:23:26.241Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2023-02-08T00:23:26.270Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Retrieved text for element element=021f5631-424b-4dd4-8ebb-9adf2f537eac containing Couple of drops of vanilla syrup for flavour"}
+{"level":30,"time":"2023-02-08T00:23:26.270Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getText"}
+{"level":30,"time":"2023-02-08T00:23:26.287Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.292Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.296Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.300Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.305Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changed active context"}
+{"level":30,"time":"2023-02-08T00:23:26.305Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changing current active page"}
+{"level":30,"time":"2023-02-08T00:23:26.305Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changed active page"}
+{"level":30,"time":"2023-02-08T00:23:26.320Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.343Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.348Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-02-08T00:23:26.349Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-02-08T00:23:26.354Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-02-08T00:23:26.354Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-02-08T00:23:26.362Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.367Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.370Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changed active context"}
+{"level":30,"time":"2023-02-08T00:23:26.370Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changing current active page"}
+{"level":30,"time":"2023-02-08T00:23:26.370Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Changed active page"}
+{"level":30,"time":"2023-02-08T00:23:26.375Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-02-08T00:23:26.477Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Removed page=2a0382c1-7c9b-4e31-b0b6-eef478ec7daf from context=95621781-8ee1-4b3c-a003-19ead3eed218 page stack"}
+{"level":30,"time":"2023-02-08T00:23:26.588Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-02-08T00:23:26.594Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.595Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-02-08T00:23:26.822Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-02-08T00:23:27.071Z","pid":124702,"hostname":"larober-Vostro-3400","msg":"End of node method closeAllBrowsers"}
