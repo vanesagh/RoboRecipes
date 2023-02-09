@@ -33,9 +33,14 @@ Get Search Results
     ${results}=    Browser.Get Element Count    h2.not-found-title
     IF    ${results} != ${0}
         ${choice}=    Get Value From User    Recipe found. Search again?    Y/N
-        ${recipe}=    Ask User For Recipe
-        Open Page To Search For A Recipe    ${recipe}
-        Get Search Results
+        IF    ${choice}== Y
+            ${recipe}=    Ask User For Recipe
+            Open Page To Search For A Recipe    ${recipe}
+            Get Search Results
+       END
+       IF   ${choice} == N
+            [Teardown]    Close Browser
+       END
     ELSE
         ${url}=    Select From Different Recipes Found
         ${element}=    Go To Selected Recipe    ${url}
@@ -77,7 +82,7 @@ Get Ingredients
 
     FOR    ${ingredient}    IN    @{ingredients}
         ${text}=    Browser.Get Text    ${ingredient}
-        ${ing}=    Get Regexp Matches    ${text}    [0-9]{1,4}g
+        ${ing}=    Get Regexp Matches    ${text}    [0-9]{1,4}g|[0-9]{1,4}
         ${len_ing}=    Get Length    ${ing}
         IF    ${len_ing}!= ${0}
             ${i}=    Evaluate    $text.index(")")
