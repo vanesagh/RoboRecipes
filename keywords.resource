@@ -17,6 +17,7 @@ ${KingArthurURL}=    https://www.kingarthurbaking.com
 &{websites_dict}
 ...     Chain Baker=https://www.chainbaker.com/?s=
 ...     King Arthur=${KingArthurURL}/search?query=
+
 ${Chain Baker recipes selector}=    h2
 ${Chain Baker ingredients selector}=    .et_pb_text_2
 ${King Arthur recipes selector}=    div.hits.grid--3-col div.grid__item.recipe--grid-item
@@ -46,6 +47,8 @@ Open Page To Search For A Recipe
         New Page    ${websites_dict}[${website}]${recipe}
     ELSE IF    '${website}' == 'King Arthur'
         New Page    ${websites_dict}[${website}]${recipe}#recipe_index
+    ELSE
+        New Page    ${website}
     END
 
 
@@ -122,32 +125,55 @@ Go To Selected Recipe
     END
     ${recipe_name}=    Browser.Get Element    h1
     ${recipe_name}=    Browser.Get Text    ${recipe_name}
-
     RETURN    ${element}    ${recipe_name}
+
+Find Other Options in Ingredient
+    [Arguments]    ${ingredient}
+    ${other_options}=    Get Regexp Matches    ${ingredient}      ${SPACE}(or|OR) \\d
+    ${len_other_options}=    Get Length    ${other_options}
+    RETURN    ${len_other_options}
+
+Get Other Options in Ingredient
+    [Arguments]    ${ingredient}
+    ${ingredient}=    Convert To Lower Case    ${ingredient}
+    @{other_options}=    Split String    ${ingredient}    ${SPACE}or${SPACE}
+
+Find Units In Cups Teaspoons Or Tablespoons
+    [Arguments]    ${ingredient}
+    ${cups_unit}=    Get Regexp Matches    ${ingredient}    ([1-9 \/+]+) (cup|tablespoon|teaspoon)s?
+    ${len_cups_unit}=    Get Length    ${cups_unit}
+    RETURN    ${len_cups_unit}    ${cups_unit}
 
 
 Get Units In Cups Teaspoons Or Tablespoons
-    [Arguments]    ${ingredient}
-    ${cups_unit}=    Get Regexp Matches    ${ingredient}    ([1-9 \/]+) (cup|tablespoon|teaspoon)s?
-    ${len_cups_unit}=    Get Length    ${cups_unit}
+    [Arguments]    ${cups_unit}
+    ${units}=    Remove String Using Regexp    ${cups_unit}[0]    ([1-9 \/]+)
+    ${quantity}=    Remove String Using Regexp    ${cups_unit}[0]    (cup|tablespoon|teaspoon)s?
 
-    IF     ${len_cups_unit} == ${1}
-        ${units}=    Remove String Using Regexp    ${cups_unit}[0]    ([1-9 \/]+)
-        ${quantity}=    Remove String Using Regexp    ${cups_unit}[0]    (cup|tablespoon|teaspoon)s?
-    END
 
-Get Units In Grams
+
+Find Units In Grams
     [Arguments]    ${ingredient}
     ${grams_unit}=    Get Regexp Matches    ${ingredient}    [0-9]{1,4}g
     ${len_grams_unit}=    Get Length    ${grams_unit}
-    IF    ${len_grams_unit} == ${1}
-        ${quantity}=    Get Substring    ${grams_unit}[0]    0    -1
-        ${units}=    Get Substring    ${grams_unit}[0]    -1
-    END
+    RETURN    ${len_grams_unit}    ${grams_unit}
 
+Get Units In Grams
+    [Arguments]    ${grams_unit}
+    ${quantity}=    Get Substring    ${grams_unit}[0]    0    -1
+    ${units}=    Get Substring    ${grams_unit}[0]    -1
 
-Get Other Ingredients
+Find Ingredients by Quantity
     [Arguments]    ${ingredient}
+    ${quantity}=    Get Regexp Matches    ${ingredient}    ^[0-9]{1,4}
+    ${len_quantity}=    Get Length    ${quantity}
+    RETURN   ${len_quantity}    ${quantity}
+
+Get Ingredients by Quantity
+    [Arguments]    ${ingredient}
+    ${ingredient_wo_qty}=    Remove String Using Regexp    ${ingredient}    ^[0-9]{1,4}
+    ${quantity}=    Get Regexp Matches    ${ingredient}    ^[0-9]{1,4}
+
 
 
 Get Ingredients From KingArthur
@@ -169,8 +195,27 @@ Get Ingredients From KingArthur
         ${ingredients_process}=    Browser.Get Elements    ${ingredient}>li
         FOR    ${ingredient}    IN    @{ingredients_process}
             ${ingredient}=    Browser.Get Text    ${ingredient}
-            Get Units In Cups Teaspoons Or Tablespoons    ${ingredient}
-            Get Units In Grams    ${ingredient}
+            ${len_grams_unit}    ${grams_unit}=    Find Units In Grams    ${ingredient}
+            ${len_cups_unit}    ${cups_unit}=    Find Units In Cups Teaspoons Or Tablespoons    ${ingredient}
+            ${len_quantity}    ${quantity}=    Find Ingredients by Quantity    ${ingredient}
+            ${len_other_opt}=    Find Other Options in Ingredient    ${ingredient}
+
+            IF    ${len_other_opt} == ${1}
+                Get Other Options in Ingredient    ${ingredient}
+            ELSE IF    ${len_grams_unit} == ${1} and ${len_cups_unit} == ${1}
+                Get Units In Grams    ${grams_unit}
+                Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
+            ELSE IF    ${len_grams_unit} == ${0} and ${len_cups_unit} == ${1}
+                Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
+
+            ELSE IF    ${len_quantity} == ${1}
+                 Get Ingredients by Quantity    ${ingredient}
+            ELSE
+                Log    ${ingredient}
+            END
+
+
+
             Append To List    ${list_ingredients}    ${ingredient}
         END
         Log     ${list_ingredients}
