@@ -78,6 +78,6 @@ Get Ingredient Without Units
 
 Get Other Ingredients
     [Arguments]    ${list_ingredients}    ${text}
-    ${dict_other}=    Create Dictionary    other=${text}
+    ${dict_other}=    Create Dictionary    item=${text}
     Append To List    ${list_ingredients}    ${dict_other}
 
