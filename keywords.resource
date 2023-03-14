@@ -137,6 +137,8 @@ Get Other Options in Ingredient
     [Arguments]    ${ingredient}
     ${ingredient}=    Convert To Lower Case    ${ingredient}
     @{other_options}=    Split String    ${ingredient}    ${SPACE}or${SPACE}
+    #${dict_ing}=    Create Dictionary    item=${ingredient}    quantity=${quantity}[0]
+    #RETURN    ${dict_ing}
 
 Find Units In Cups Teaspoons Or Tablespoons
     [Arguments]    ${ingredient}
@@ -149,8 +151,7 @@ Get Units In Cups Teaspoons Or Tablespoons
     [Arguments]    ${cups_unit}
     ${units}=    Remove String Using Regexp    ${cups_unit}[0]    ([1-9 \/]+)
     ${quantity}=    Remove String Using Regexp    ${cups_unit}[0]    (cup|tablespoon|teaspoon)s?
-
-
+    RETURN    ${units}    ${quantity}
 
 Find Units In Grams
     [Arguments]    ${ingredient}
@@ -162,6 +163,7 @@ Get Units In Grams
     [Arguments]    ${grams_unit}
     ${quantity}=    Get Substring    ${grams_unit}[0]    0    -1
     ${units}=    Get Substring    ${grams_unit}[0]    -1
+    RETURN    ${units}    ${quantity}
 
 Find Ingredients by Quantity
     [Arguments]    ${ingredient}
@@ -171,10 +173,15 @@ Find Ingredients by Quantity
 
 Get Ingredients by Quantity
     [Arguments]    ${ingredient}
-    ${ingredient_wo_qty}=    Remove String Using Regexp    ${ingredient}    ^[0-9]{1,4}
+    ${ingredient_wo_unit}=    Remove String Using Regexp    ${ingredient}    ^[0-9]{1,4}
     ${quantity}=    Get Regexp Matches    ${ingredient}    ^[0-9]{1,4}
+    RETURN    ${quantity}    ${ingredient_wo_unit}
 
 
+Get Item For Units In Grams
+    [Arguments]    ${ingredient}
+    ${item}=    Remove String Using Regexp    ${ingredient}    ([1-9 \/]+)(cup|tablespoon|teaspoon)s?\\s*\\(.*\\)\\s*
+    RETURN    ${item}
 
 Get Ingredients From KingArthur
     [Arguments]    ${element}
@@ -203,16 +210,21 @@ Get Ingredients From KingArthur
             IF    ${len_other_opt} == ${1}
                 Get Other Options in Ingredient    ${ingredient}
             ELSE IF    ${len_grams_unit} == ${1} and ${len_cups_unit} == ${1}
-                Get Units In Grams    ${grams_unit}
-                Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
-            ELSE IF    ${len_grams_unit} == ${0} and ${len_cups_unit} == ${1}
-                Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
+                ${units_g}    ${quantity_g}=    Get Units In Grams    ${grams_unit}
+                ${units}    ${quantity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
+                ${item}=    Get Item For Units In Grams    ${ingredient}
+                ${dict_ing}=    Create Dictionary
+                ...    item=${item}    quantity (g)=${quantity_g}    units in g=${units_g}
+                ...    quantity (cups,spoons)=${quantity}    units in cups,spoons=${units}
 
+            ELSE IF    ${len_grams_unit} == ${0} and ${len_cups_unit} == ${1}
+                ${units}    ${quanity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_un
             ELSE IF    ${len_quantity} == ${1}
                  Get Ingredients by Quantity    ${ingredient}
             ELSE
                 Log    ${ingredient}
             END
+            RETURN    ${dict_ing}
 
 
 
