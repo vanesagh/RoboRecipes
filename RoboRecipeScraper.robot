@@ -17,15 +17,10 @@ Search In Different Recipe Websites
     [Arguments]    ${recipe}    ${websites}
     FOR    ${website}    IN    @{websites}
         Open Page To Search For A Recipe    ${recipe}    ${website}
-        Get Search Results    ${website}
+        ${results}    ${recipe_name}=    Get Search Results    ${website}
+        Save Results To JSON File    ${results}    ${recipe_name}
 
     END
-
-
-    
-  
-
-
     Log    ${websites}
     Log    ${recipe}
 

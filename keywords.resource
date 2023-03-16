@@ -1,5 +1,4 @@
 
-
 *** Settings ***
 Library     Dialogs
 Library     Browser
@@ -11,6 +10,7 @@ Library     Collections
 Library     String
 Library     JSONLibrary
 Resource    ChainBakerKeywords.resource
+Resource    KingArthurKeywords.resource
 
 *** Variables ***
 ${KingArthurURL}=    https://www.kingarthurbaking.com
@@ -22,6 +22,7 @@ ${Chain Baker recipes selector}=    h2
 ${Chain Baker ingredients selector}=    .et_pb_text_2
 ${King Arthur recipes selector}=    div.hits.grid--3-col div.grid__item.recipe--grid-item
 ${King Arthur ingredients selector}=    .ingredients-list
+${i}=    ${0}
 
 
 
@@ -84,10 +85,8 @@ Get Search Results
         ELSE
             ${dict_ingredients}=    Get Ingredients From KingArthur    ${element}
         END
-
     END
-
-    #RETURN    ${dict_ingredients}    ${recipe_name}
+    RETURN    ${dict_ingredients}    ${recipe_name}
 
 Get All Recipes Found
     [Arguments]    ${selector}
@@ -127,31 +126,6 @@ Go To Selected Recipe
     ${recipe_name}=    Browser.Get Text    ${recipe_name}
     RETURN    ${element}    ${recipe_name}
 
-Find Other Options in Ingredient
-    [Arguments]    ${ingredient}
-    ${other_options}=    Get Regexp Matches    ${ingredient}      ${SPACE}(or|OR) \\d
-    ${len_other_options}=    Get Length    ${other_options}
-    RETURN    ${len_other_options}
-
-Get Other Options in Ingredient
-    [Arguments]    ${ingredient}
-    ${ingredient}=    Convert To Lower Case    ${ingredient}
-    @{other_options}=    Split String    ${ingredient}    ${SPACE}or${SPACE}
-    #${dict_ing}=    Create Dictionary    item=${ingredient}    quantity=${quantity}[0]
-    #RETURN    ${dict_ing}
-
-Find Units In Cups Teaspoons Or Tablespoons
-    [Arguments]    ${ingredient}
-    ${cups_unit}=    Get Regexp Matches    ${ingredient}    ([1-9 \/+]+) (cup|tablespoon|teaspoon)s?
-    ${len_cups_unit}=    Get Length    ${cups_unit}
-    RETURN    ${len_cups_unit}    ${cups_unit}
-
-
-Get Units In Cups Teaspoons Or Tablespoons
-    [Arguments]    ${cups_unit}
-    ${units}=    Remove String Using Regexp    ${cups_unit}[0]    ([1-9 \/]+)
-    ${quantity}=    Remove String Using Regexp    ${cups_unit}[0]    (cup|tablespoon|teaspoon)s?
-    RETURN    ${units}    ${quantity}
 
 Find Units In Grams
     [Arguments]    ${ingredient}
@@ -165,81 +139,11 @@ Get Units In Grams
     ${units}=    Get Substring    ${grams_unit}[0]    -1
     RETURN    ${units}    ${quantity}
 
-Find Ingredients by Quantity
-    [Arguments]    ${ingredient}
-    ${quantity}=    Get Regexp Matches    ${ingredient}    ^[0-9]{1,4}
-    ${len_quantity}=    Get Length    ${quantity}
-    RETURN   ${len_quantity}    ${quantity}
 
-Get Ingredients by Quantity
-    [Arguments]    ${ingredient}
-    ${ingredient_wo_unit}=    Remove String Using Regexp    ${ingredient}    ^[0-9]{1,4}
-    ${quantity}=    Get Regexp Matches    ${ingredient}    ^[0-9]{1,4}
-    RETURN    ${quantity}    ${ingredient_wo_unit}
-
-
-Get Item For Units In Grams
-    [Arguments]    ${ingredient}
-    ${item}=    Remove String Using Regexp    ${ingredient}    ([1-9 \/]+)(cup|tablespoon|teaspoon)s?\\s*\\(.*\\)\\s*
+Get Item
+    [Arguments]    ${ingredient}    ${regex}
+    ${item}=    Remove String Using Regexp    ${ingredient}    ${regex}
     RETURN    ${item}
-
-Get Ingredients From KingArthur
-    [Arguments]    ${element}
-    ${processes_names}=    Browser.Get Elements    ${element}>.ingredient-section>p
-    ${ingredients}=    Browser.Get Elements    ${element}>.ingredient-section>.list--bullets
-    ${list_processes}=     Create List
-    ${list_of_list}=    Create List
-    ${dict_ingredients}=    Create Dictionary
-
-    FOR    ${process_name}    IN    @{processes_names}
-        ${process_name}=    Browser.Get Text   ${process_name}
-        Append To List    ${list_processes}    ${process_name}
-    END
-    Log    ${list_processes}
-
-    FOR    ${ingredient}   IN    @{ingredients}
-        ${list_ingredients}=    Create List
-        ${ingredients_process}=    Browser.Get Elements    ${ingredient}>li
-        FOR    ${ingredient}    IN    @{ingredients_process}
-            ${ingredient}=    Browser.Get Text    ${ingredient}
-            ${len_grams_unit}    ${grams_unit}=    Find Units In Grams    ${ingredient}
-            ${len_cups_unit}    ${cups_unit}=    Find Units In Cups Teaspoons Or Tablespoons    ${ingredient}
-            ${len_quantity}    ${quantity}=    Find Ingredients by Quantity    ${ingredient}
-            ${len_other_opt}=    Find Other Options in Ingredient    ${ingredient}
-
-            IF    ${len_other_opt} == ${1}
-                Get Other Options in Ingredient    ${ingredient}
-            ELSE IF    ${len_grams_unit} == ${1} and ${len_cups_unit} == ${1}
-                ${units_g}    ${quantity_g}=    Get Units In Grams    ${grams_unit}
-                ${units}    ${quantity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
-                ${item}=    Get Item For Units In Grams    ${ingredient}
-                ${dict_ing}=    Create Dictionary
-                ...    item=${item}    quantity (g)=${quantity_g}    units in g=${units_g}
-                ...    quantity (cups,spoons)=${quantity}    units in cups,spoons=${units}
-
-            ELSE IF    ${len_grams_unit} == ${0} and ${len_cups_unit} == ${1}
-                ${units}    ${quanity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_un
-            ELSE IF    ${len_quantity} == ${1}
-                 Get Ingredients by Quantity    ${ingredient}
-            ELSE
-                Log    ${ingredient}
-            END
-            RETURN    ${dict_ing}
-
-
-
-            Append To List    ${list_ingredients}    ${ingredient}
-        END
-        Log     ${list_ingredients}
-        Append To List    ${list_of_list}    ${list_ingredients}
-    END
-    FOR    ${process_name}    ${list_ingredients}    IN ZIP    ${list_processes}    ${list_of_list}
-        Set To Dictionary    ${dict_ingredients}    ${process_name}=${list_ingredients}
-    END
-    Log    ${dict_ingredients}
-    RETURN    ${dict_ingredients}
-
-    # to do:  when there's no process
 
 
 

@@ -6,7 +6,6 @@ Resource    keywords.resource
 
 
 *** Keywords ***
-
 Get Ingredients From ChainBaker
     [Arguments]    ${element}
     ${ingredients}=    Browser.Get Elements    ${element}>p
@@ -17,8 +16,7 @@ Get Ingredients From ChainBaker
         ${text}=    Browser.Get Text    ${ingredient}
         ${len_text}=    Get Length    ${text}
         # Find text with ingredients with units
-        ${ing_w_units}=    Get Units In Grams    ${text}
-        ${len_ing_w_units}=    Get Length    ${ing_w_units}
+        ${len_ing_w_units}    ${grams_unit}=    Find Units In Grams    ${text}
         # Find text with ingredients without units
         ${ing_wo_units}=    Get Regexp Matches    ${text}    ^[0-9]{1,4}
         ${len_ing_wo_units}=    Get Length    ${ing_wo_units}
@@ -27,13 +25,12 @@ Get Ingredients From ChainBaker
 
         IF    $process_3 == "For"
             ${process}=    Get Substring    ${text}    0    -1
-            #&{d}=    Create Dictionary
         ELSE IF    ${len_text}==${1}
             Set To Dictionary    ${dict_ingredients}    ${process}=${list_ingredients}
             ${list_ingredients}=    Create List
             Log    ${dict_ingredients}
         ELSE IF    ${len_ing_w_units}!= ${0}
-            ${dict_ing}=    Get Ingredient With Units    ${text}
+            ${dict_ing}=    Get Ingredient With Units    ${text}    ${grams_unit}
             Append To List    ${list_ingredients}    ${dict_ing}
         ELSE IF    ${len_ing_wo_units}!=${0}
             ${dict_ing}=    Get Ingredient Without Units    ${text}
@@ -58,14 +55,9 @@ Get Ingredients From ChainBaker
     RETURN    ${dict_ingredients}
 
 Get Ingredient With Units
-    [Arguments]    ${text}
-    ${quantity_w_units}=    Get Regexp Matches    ${text}    [0-9]{1,4}g
-    ${quantity}=    Get Substring    ${quantity_w_units}[0]    0    -1
-    ${units}=    Get Substring    ${quantity_w_units}[0]    -1
-    ${item_wo_oz}=    Remove String Using Regexp    ${text}
-    ...    [(]([0-9]{1,4}[.][0-9]{1,4}oz)|([0-9]{1,4}oz)[)]
-    ${item}=    Remove String Using Regexp    ${item_wo_oz}    [0-9]{1,4}g
-    ${item}=    Get Substring    ${item}    2
+    [Arguments]    ${text}    ${grams_unit}
+    ${units}    ${quantity}=  Get Units In Grams    ${grams_unit}
+    ${item}=    Get Item    ${text}    [0-9]{1,4}g\\s*\\(.*\\)
     ${dict_ing}=    Create Dictionary    item=${item}    quantity=${quantity}    units=${units}
     RETURN    ${dict_ing}
 
