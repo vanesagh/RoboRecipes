@@ -44,7 +44,7 @@ Get Ingredients From KingArthur
                 Append To List    ${list_ingredients}    ${dict_ing}
 
             ELSE IF    ${len_grams_unit} == ${0} and ${len_cups_unit} == ${1}
-                ${units}    ${quanity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
+                ${units}    ${quantity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
                 ${item}=    Get Item    ${ingredient}    ([1-9 \/]+)(cup|tablespoon|teaspoon)s?
                 ${dict_ing}=    Create Dictionary
                 ...    item=${item}    quantity (cups,spoons)=${quantity}    units in cups,spoons=${units}
@@ -52,7 +52,7 @@ Get Ingredients From KingArthur
             ELSE IF    ${len_quantity} == ${1}
                  ${quantity}    ${item}=    Get Ingredients by Quantity    ${ingredient}
                  ${dict_ing}=    Create Dictionary
-                 ...    item=${item}    quantity (cups,spoons)=${quantity}    units in cups,spoons=${units}
+                 ...    item=${item}    quantity (cups,spoons)=${quantity}[0]
                  Append To List    ${list_ingredients}    ${dict_ing}
             ELSE
                 Log    ${ingredient}
@@ -93,8 +93,6 @@ Get Units In Cups Teaspoons Or Tablespoons
     ${units}=    Remove String Using Regexp    ${cups_unit}[0]    ([1-9 \/]+)
     ${quantity}=    Remove String Using Regexp    ${cups_unit}[0]    (cup|tablespoon|teaspoon)s?
     RETURN    ${units}    ${quantity}
-
-
 
 Find Ingredients by Quantity
     [Arguments]    ${ingredient}

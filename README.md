@@ -1,15 +1,15 @@
 # ROBO RECIPE SCRAPER (2023)
 ## Introduction
 
-Recently I heard about RobotFramework, a framework for test automation and Robotic Process Automation (RPA).
+Recently I heard about [RobotFramework](https://robotframework.org/), a framework for test automation and Robotic Process Automation (RPA).
 The last one, RPA, I find it pretty cool and super useful, so I decided to give it a try.
 
 I have a small business, a bakery to be more precise. One of the things that I wanted to automate as a first start
 is finding the recipes and do the Bill of Materials.
 
-The purpose of this robot (RoboRecipeScraper) is to search for a recipe in two
+The purpose of this attended robot - yes, it requires a little of human interaction-, **RoboRecipeScraper**, is to search for a recipe in two
 specific websites, do scraping in order to get the ingredients
-of the recipe and save it in a json file.
+of the recipe, and save it in a json file.
 
 This robot is part of the projects I am developing in 2023. It is still under development although so far it is functional.
 I am refactoring some parts of the code for design purposes.
