@@ -37,7 +37,7 @@ Get Ingredients From KingArthur
             ELSE IF    ${len_grams_unit} == ${1} and ${len_cups_unit} == ${1}
                 ${units_g}    ${quantity_g}=    Get Units In Grams    ${grams_unit}
                 ${units}    ${quantity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
-                ${item}=    Get Item    ${ingredient}    ([1-9 \/]+)(cup|tablespoon|teaspoon)s?\\s*\\(.*\\)\\s*
+                ${item}=    Get Item    ${ingredient}    ([1-9 \/+]+)(cup|tablespoon|teaspoon)s?\\s*\\([0-9]{1,4}g\\)\\s*
                 ${dict_ing}=    Create Dictionary
                 ...    item=${item}    quantity (g)=${quantity_g}    units in g=${units_g}
                 ...    quantity (cups,spoons)=${quantity}    units in cups,spoons=${units}
@@ -45,7 +45,7 @@ Get Ingredients From KingArthur
 
             ELSE IF    ${len_grams_unit} == ${0} and ${len_cups_unit} == ${1}
                 ${units}    ${quantity}=    Get Units In Cups Teaspoons Or Tablespoons    ${cups_unit}
-                ${item}=    Get Item    ${ingredient}    ([1-9 \/]+)(cup|tablespoon|teaspoon)s?
+                ${item}=    Get Item    ${ingredient}    ([1-9 \/+]+)(cup|tablespoon|teaspoon)s?
                 ${dict_ing}=    Create Dictionary
                 ...    item=${item}    quantity (cups,spoons)=${quantity}    units in cups,spoons=${units}
                 Append To List    ${list_ingredients}    ${dict_ing}
@@ -55,7 +55,9 @@ Get Ingredients From KingArthur
                  ...    item=${item}    quantity (cups,spoons)=${quantity}[0]
                  Append To List    ${list_ingredients}    ${dict_ing}
             ELSE
-                Log    ${ingredient}
+                ${dict_ing}=    Create Dictionary
+                 ...    item=${ingredient}
+                 Append To List    ${list_ingredients}    ${dict_ing}
             END
         END
         #Log     ${list_ingredients}
@@ -83,7 +85,7 @@ Get Other Options in Ingredient
 
 Find Units In Cups Teaspoons Or Tablespoons
     [Arguments]    ${ingredient}
-    ${cups_unit}=    Get Regexp Matches    ${ingredient}    ([1-9 \/+]+) (cup|tablespoon|teaspoon)s?
+    ${cups_unit}=    Get Regexp Matches    ${ingredient}    ([1-9 \/+]+)\\s*(cup|tablespoon|teaspoon)s?
     ${len_cups_unit}=    Get Length    ${cups_unit}
     RETURN    ${len_cups_unit}    ${cups_unit}
 

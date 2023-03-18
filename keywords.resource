@@ -18,12 +18,15 @@ ${KingArthurURL}=    https://www.kingarthurbaking.com
 ...     Chain Baker=https://www.chainbaker.com/?s=
 ...     King Arthur=${KingArthurURL}/search?query=
 
-${Chain Baker recipes selector}=    h2
-${Chain Baker ingredients selector}=    .et_pb_text_2
-${King Arthur recipes selector}=    div.hits.grid--3-col div.grid__item.recipe--grid-item
-${King Arthur ingredients selector}=    .ingredients-list
-${i}=    ${0}
+&{websites_ingredients_selector_dict}
+...    Chain Baker=.et_pb_text_2 > div:nth-child(1)
+...    King Arthur=.ingredients-list
 
+&{websites_recipes_selector_dict}
+...    Chain Baker=h2
+...    King Arthur=div.hits.grid--3-col div.grid__item.recipe--grid-item
+
+${i}=    ${0}
 
 
 
@@ -53,31 +56,36 @@ Open Page To Search For A Recipe
     END
 
 
+Handle Recipe Not Found
+    [Arguments]    ${website}
+    ${choice}=    Get Value From User    Recipe not found. Search again?    Y/N
+        IF    '${choice}' == 'Y'
+            ${recipe}=    Ask User For Recipe
+            ${websites}=    Ask User for Websites To Search In
+            Open Page To Search For A Recipe    ${recipe}    ${website}
+            ${results}    ${recipe_name}=    Get Search Results    ${website}
+            Save Results To JSON File    ${results}    ${recipe_name}
+        ELSE
+            Browser.Close Browser    CURRENT
+        END
+
+Handle Recipe Results
+    [Arguments]    ${website}
+    ${selector}=   Set Variable    ${websites_recipes_selector_dict}[${website}]
+    RETURN    ${selector}
 
 
 Get Search Results
     [Arguments]    ${website}
-    ${results}=    Browser.Get Element Count    h2.not-found-title
-    IF    ${results} != ${0}
-        ${choice}=    Get Value From User    Recipe not found. Search again?    Y/N
-        IF    ${choice}== Y
-            ${recipe}=    Ask User For Recipe
-            ${websites}=    Ask User for Websites To Search In
-            Open Page To Search For A Recipe    ${recipe}    ${website}
-            Get Search Results    ${website}
-        END
-        IF    ${choice} == N    [Teardown]    Close Browser
-    ELSE
+    ${not_found_CB}=    Browser.Get Element Count    h2.not-found-title
+    ${not_found_KA}=    Browser.Get Element Count    .hits.grid.grid--3-col>h4
+    Log Many    ${not_found_CB}    ${not_found_KA}
 
-         IF    '${website}' == 'Chain Baker'
-             ${selector}=   Set Variable    ${Chain Baker recipes selector}
-             Log    ${selector}
-         ELSE
-             ${selector}=    Set Variable    ${King Arthur recipes selector}
-             Log    ${selector}
-         END
-
-
+    IF    ${not_found_CB} != ${0} or ${not_found_KA} != ${0}
+        Handle Recipe Not Found    ${website}
+        RETURN
+    ELSE   
+        ${selector}=    Handle Recipe Results    ${website}   
         ${url}=    Select From Different Recipes Found    ${selector}
         ${element}    ${recipe_name}=    Go To Selected Recipe    ${url}    ${website}
         IF    '${website}' == 'Chain Baker'
@@ -115,13 +123,10 @@ Go To Selected Recipe
     Browser.Set Browser Timeout    2m 30 seconds
     IF    '${website}' == 'King Arthur'
         Browser.Go To    ${KingArthurURL}${url}
-        ${element}=    Browser.Get Element    ${King Arthur ingredients selector}
-        Log    ${KingArthurURL}${url}
     ELSE
         Browser.Go To    ${url}
-        ${element}=    Browser.Get Element    ${Chain Baker ingredients selector}
-
     END
+    ${element}=    Browser.Get Element    ${websites_ingredients_selector_dict}[${website}]
     ${recipe_name}=    Browser.Get Element    h1
     ${recipe_name}=    Browser.Get Text    ${recipe_name}
     RETURN    ${element}    ${recipe_name}
@@ -144,8 +149,6 @@ Get Item
     [Arguments]    ${ingredient}    ${regex}
     ${item}=    Remove String Using Regexp    ${ingredient}    ${regex}
     RETURN    ${item}
-
-
 
 
 Save Results To JSON File
