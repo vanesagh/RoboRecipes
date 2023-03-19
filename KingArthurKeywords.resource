@@ -8,18 +8,13 @@ Resource   keywords.resource
 *** Keywords ***
 Get Ingredients From KingArthur
     [Arguments]    ${element}
-
-    ${processes_names}=    Browser.Get Elements    ${element}>.ingredient-section>p
+    ${processes_count}=    Browser.Get Element Count    ${element}>.ingredient-section>p
     ${ingredients}=    Browser.Get Elements    ${element}>.ingredient-section>.list--bullets
-    ${list_processes}=     Create List
-    ${list_of_list}=    Create List
     ${dict_ingredients}=    Create Dictionary
-
-    FOR    ${process_name}    IN    @{processes_names}
-        ${process_name}=    Browser.Get Text   ${process_name}
-        Append To List    ${list_processes}    ${process_name}
+    ${list_processes}=    Create List
+    IF    ${processes_count} != ${0}
+        ${list_processes}=    Get List of Processes    ${element}
     END
-    Log    ${list_processes}
 
     FOR    ${ingredient}       IN    @{ingredients}
         ${list_ingredients}=    Create List
@@ -60,15 +55,30 @@ Get Ingredients From KingArthur
                  Append To List    ${list_ingredients}    ${dict_ing}
             END
         END
-        #Log     ${list_ingredients}
-        Set To Dictionary    ${dict_ingredients}    ${list_processes}[${i}]=${list_ingredients}
-        ${i}=    Evaluate    ${i}+1
+        IF    ${processes_count} != ${0}
+            Set To Dictionary    ${dict_ingredients}    ${list_processes}[${i}]=${list_ingredients}
+            ${i}=    Evaluate    ${i}+1
+        ELSE
+            Set To Dictionary    ${dict_ingredients}    main=${list_ingredients}
+
+        END
+
     END
     #Log    ${dict_ingredients}
     RETURN    ${dict_ingredients}
 
     # TO DO:  when there's no process
 
+Get List of Processes
+    [Arguments]    ${element}
+    ${processes_names}=    Browser.Get Elements    ${element}>.ingredient-section>p
+    ${list_processes}=     Create List
+    FOR    ${process_name}    IN    @{processes_names}
+        ${process_name}=    Browser.Get Text   ${process_name}
+        Append To List    ${list_processes}    ${process_name}
+    END
+    Log    ${list_processes}
+    RETURN    ${list_processes}
 
 Find Other Options in Ingredient
     [Arguments]    ${ingredient}
