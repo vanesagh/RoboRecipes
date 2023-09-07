@@ -22,8 +22,8 @@ Get Ingredients From ChainBaker
         ${len_ing_wo_units}=    Get Length    ${ing_wo_units}
         # Find steps of the recipe process
         ${process_3}=    Get Substring    ${text}    0    3
-
-        IF    $process_3 == "For"
+        Log    ${process_3}
+        IF    $process_3 == "To " or $process_3=="For"
             ${process}=    Get Substring    ${text}    0    -1
         ELSE IF    ${len_text}==${1}
             Set To Dictionary    ${dict_ingredients}    ${process}=${list_ingredients}
@@ -57,7 +57,7 @@ Get Ingredients From ChainBaker
 Get Ingredient With Units
     [Arguments]    ${text}    ${grams_unit}
     ${units}    ${quantity}=  Get Units In Grams    ${grams_unit}
-    ${item}=    Get Item    ${text}    [0-9]{1,4}g\\s*\\(.*\\)
+    ${item}=    Get Item    ${text}    [0-9]{1,4}g\\s*\\(.*oz\\)
     ${dict_ing}=    Create Dictionary    item=${item}    quantity=${quantity}    units=${units}
     RETURN    ${dict_ing}
 
